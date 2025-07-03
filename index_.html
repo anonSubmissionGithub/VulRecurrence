@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CWE Transition Tree</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .tooltip {
+      position: absolute;
+      text-align: left;
+      width: auto;
+      max-width: 300px;
+      padding: 10px;
+      font: 12px sans-serif;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      pointer-events: none;
+      box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+<svg width="1600"></svg>
+<div id="tooltip" class="tooltip" style="opacity:0;"></div>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script>
+const margin = {top: 20, right: 120, bottom: 20, left: 120};
+const baseWidth = 1600;
+
+const outerSvg = d3.select("svg");
+const zoomGroup = outerSvg.append("g");
+const zoom = d3.zoom()
+  .scaleExtent([0.5, 5])
+  .on("zoom", (event) => {
+    zoomGroup.attr("transform", event.transform);
+});
+
+outerSvg.call(zoom);
+
+const tree = d3.tree().nodeSize([40, 380]);
+const tooltip = d3.select("#tooltip");
+
+d3.json("cwe_tree_2level.json").then(data => {
+  const root = d3.hierarchy(data);
+  const numLeaves = root.leaves().length;
+  const dynamicHeight = Math.max(1000, numLeaves * 50);
+
+  outerSvg.attr("height", dynamicHeight);
+  tree.size([dynamicHeight, baseWidth - 160]);
+
+  zoomGroup.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  root.x0 = dynamicHeight / 2;
+  root.y0 = 0;
+
+  function update(source) {
+    const treeData = tree(root);
+    const nodes = treeData.descendants();
+
+    nodes.forEach(d => {
+      if (d.depth === 0) d.y = -100;
+      if (d.depth === 1) d.y = 100;
+      if (d.depth === 2) d.y = 700;
+    });
+
+    const links = treeData.links();
+
+    const node = zoomGroup.selectAll('g.node')
+      .data(nodes, d => d.id || (d.id = ++i));
+
+    const nodeEnter = node.enter().append('g')
+      .attr('class', 'node')
+      .attr("transform", d => "translate(" + d.y + "," + d.x + ")")
+      .on("click", click)
+      .on("mouseover", function(event, d) {
+        tooltip.transition().duration(200).style("opacity", 0.9);
+        tooltip.html(`<strong>${d.data.name}</strong>`)
+          .style("left", (event.pageX + 15) + "px")
+          .style("top", (event.pageY - 28) + "px");
+      })
+      .on("mouseout", function() {
+        tooltip.transition().duration(300).style("opacity", 0);
+      });
+
+    nodeEnter.append('circle')
+      .attr('r', 6)
+      .style("fill", "#ccc");
+
+    nodeEnter.append('text')
+      .attr("dy", ".35em")
+      .attr("x", d => d.children || d._children ? -13 : 13)
+      .attr("text-anchor", d => d.children || d._children ? "end" : "start")
+      .text(d => d.data.name);
+
+    const link = zoomGroup.selectAll('path.link')
+      .data(links, d => d.target.id);
+
+    link.enter().insert('path', "g")
+      .attr("class", "link")
+      .attr("stroke", "#ccc")
+      .attr("stroke-width", 1.5)
+      .attr("fill", "none")
+      .attr('d', d => diagonal(d.source, d.target));
+
+    function diagonal(s, d) {
+      return `M ${s.y} ${s.x}
+              C ${(s.y + d.y) / 2} ${s.x},
+                ${(s.y + d.y) / 2} ${d.x},
+                ${d.y} ${d.x}`;
+    }
+
+    function click(event, d) {
+      if (d.children) {
+        d._children = d.children;
+        d.children = null;
+      } else {
+        d.children = d._children;
+        d._children = null;
+      }
+      update(d);
+    }
+  }
+
+  let i = 0;
+  update(root);
+
+  outerSvg.call(
+    zoom.transform,
+    d3.zoomIdentity.translate(baseWidth / 4, 50).scale(0.8)
+  );
+});
+</script>
+</body>
+</html>
