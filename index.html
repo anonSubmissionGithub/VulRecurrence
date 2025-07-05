@@ -3,7 +3,8 @@
 <style>
   body {
     margin: 0;
-    font-family: sans-serif; font-size: 10px;
+    font-family: sans-serif;
+    font-size: 10px;
     overflow: hidden;
   }
   svg {
@@ -29,41 +30,279 @@
     stroke-width: 3px;
     stroke-linejoin: round;
   }
-  .zoom-buttons {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
-  }
-  .zoom-buttons button {
-    display: block;
-    margin: 5px;
-    padding: 8px 12px;
-    font-size: 14px;
-  }
 
   .link-incoming {
-    stroke: #e74c3c;
-    stroke-width: 3px;
+    stroke: #e74c3c !important;
   }
   .link-outgoing {
-    stroke: #3498db;
-    stroke-width: 3px;
+    stroke: #3498db !important;
   }
-  
+  .link-bidirectional {
+    stroke: purple !important;
+  }
+
   .node-selected circle {
     stroke: #2c3e50;
     stroke-width: 3px;
   }
+
+  .dimmed-node circle {
+    opacity: 0.1;
+  }
+  .dimmed-text {
+    opacity: 0.1;
+  }
+  .dimmed-link {
+    opacity: 0.1;
+  }
+
+  /* Filter Panel Styles */
+.filter-panel {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  border-right: 2px solid #dee2e6;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  z-index: 200;
+  transition: left 0.3s ease;
+}
+  
+  .filter-panel.open {
+    left: 0;
+  }
+  
+  .filter-header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .filter-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .filter-section {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+  }
+  
+  .filter-section:last-child {
+    border-bottom: none;
+  }
+  
+  .section-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Search */
+  .search-container {
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .search-results {
+    max-height: 120px;
+    overflow-y: auto;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fafafa;
+    display: none;
+  }
+  
+  .search-result-item {
+    padding: 5px 8px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 1.3;
+    transition: background-color 0.2s;
+  }
+  
+  .search-result-item:hover {
+    background: #e3f2fd;
+  }
+  
+  .search-result-item:last-child {
+    border-bottom: none;
+  }
+  
+  .search-no-results {
+    padding: 8px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    font-size: 11px;
+  }
+  
+  .search-highlight {
+    background: #fff3cd;
+    border: 2px solid #ffc107 !important;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background: #3498db;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: #2980b9;
+  }
+  
+  .btn-secondary {
+    background: #95a5a6;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background: #7f8c8d;
+  }
+  
+  .btn-small {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  /* COMPACT CONTROL BAR - ALL THREE BUTTONS TOGETHER */
+  .control-bar {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 300;
+    display: flex;
+    gap: 6px;
+    background: rgba(44, 62, 80, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 4px 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  }
+  
+  .control-bar button {
+    padding: 4px 8px;
+    font-size: 11px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .control-bar button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
 </style>
 <body>
-<div class="zoom-buttons">
+
+<!-- UNIFIED CONTROL BAR WITH ALL THREE BUTTONS -->
+<div class="control-bar">
+  <button onclick="toggleFilterPanel()" id="filter-toggle">⚙️ Filters</button>
   <button onclick="location.href='index_.html'">2-D View</button>
   <button onclick="resetZoom()">Reset</button>
-  
 </div>
+
+<!-- Filter Panel -->
+<div class="filter-panel" id="filter-panel">
+  <div class="filter-header">
+    🔍 Search CWE
+    <button class="filter-close" onclick="toggleFilterPanel()">×</button>
+  </div>
+  
+  <!-- Search Section -->
+  <div class="filter-section">
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search CWE ID or description..." 
+             id="search-input" oninput="handleSearch(this.value)">
+      <div class="search-results" id="search-results">
+        <!-- Search results will be populated here -->
+      </div>
+    </div>
+    <button class="btn btn-secondary btn-small" onclick="clearSearch()">Clear</button>
+  </div>
+</div>
+
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script>
+// Global variables for search
+let searchResults = [];
+let highlightedNodes = new Set();
+let networkData = null; // Make networkData globally accessible
+
+// === CWE descriptions will be loaded from CSV ===
+let cweDescriptions = {};
+
+// Load CWE descriptions from CSV
+d3.csv("cwe_id_description_mapping.csv").then(csvData => {
+  csvData.forEach(row => {
+    cweDescriptions[row.CWE_ID] = row.Description;
+  });
+}).catch(error => {
+  console.warn("Could not load CWE descriptions:", error);
+});
+
+// === Helper to update labels (id vs id + description) ===
+function updateLabels(showSet) {
+  if (!container) return;
+  container.selectAll('.node text')
+    .text(d => (showSet && showSet.has(d.id))
+      ? `${d.id}: ${cweDescriptions[d.id] || ''}`
+      : d.id);
+}
+
 let dragging = false;
 let selectedNode = null;
 
@@ -88,12 +327,22 @@ zoom.on("zoom", function(event) {
   currentTransform = event.transform;
 });
 
+// Load network data
 d3.json("cwe_network_edges.json").then(data => {
+  networkData = data; // Store in global variable
+  
+  document.getElementById("total-nodes").textContent = networkData.nodes.length;
+  
+  // Apply initial zoom out after a short delay
+  setTimeout(() => {
+    const initialTransform = d3.zoomIdentity
+      .translate(250, 150)  // Move right and down
+      .scale(0.5);
+    svg.call(zoom.transform, initialTransform);
+  }, 100);
 
-  document.getElementById("total-nodes").textContent = data.nodes.length;
-
-  const simulation = d3.forceSimulation(data.nodes)
-    .force("link", d3.forceLink(data.links).id(d => d.id).distance(300).strength(0.5))
+  const simulation = d3.forceSimulation(networkData.nodes)
+    .force("link", d3.forceLink(networkData.links).id(d => d.id).distance(300).strength(0.5))
     .force("charge", d3.forceManyBody().strength(-1000))
     .force("center", d3.forceCenter(width / 2, height / 2))
     .force("collision", d3.forceCollide().radius(30));
@@ -104,69 +353,137 @@ d3.json("cwe_network_edges.json").then(data => {
     .attr("stroke", "#aaa")
     .attr("stroke-opacity", 0.6)
     .selectAll("line")
-    .data(data.links)
+    .data(networkData.links)
     .join("line")
-    .attr("stroke-width", d => Math.sqrt(d.value));
+    .attr("stroke-width", 1); // Default thin width for all edges
 
   const node = container.append("g")
     .attr("stroke", "#fff")
     .attr("stroke-width", 1.5)
     .selectAll("g")
-    .data(data.nodes)
+    .data(networkData.nodes)
     .join("g")
     .attr("class", "node")
     .call(drag(simulation))
     .on("click", (event, d) => {
-      
       if (!dragging) {
-        // Check if clicking on the same node that's already selected
+        // Toggle selection if clicking same node
         if (selectedNode && selectedNode.id === d.id) {
-          // Deselect the node
+          // Deselect
           selectedNode = null;
-          
-          // Remove all highlights
+
           container.selectAll("line")
+            .classed("dimmed-link", false)
             .classed("link-incoming", false)
-            .classed("link-outgoing", false);
-          
-          document.getElementById("info-panel").style.display = "none";
-          // Remove node selection styling
+            .classed("link-outgoing", false)
+            .classed("link-bidirectional", false)
+            .attr("stroke-width", 1)  // Reset to thin
+            .attr("stroke", "#aaa");  // Reset to default color
+
           container.selectAll(".node")
-            .classed("node-selected", false);
-            
+            .classed("dimmed-node", false)
+            .classed("node-selected", false)
+            .select("text")
+            .classed("dimmed-text", false);
+
+          document.getElementById("info-panel").style.display = "none";
+
+          // Revert labels to IDs only
+          updateLabels(null);
         } else {
           // Select new node
           selectedNode = d;
-          
-          // Remove previous highlights
+
+          // Compute connected nodes
+          const connectedNodes = new Set();
+          networkData.links.forEach(l => {
+            const src = typeof l.source === 'string' ? l.source : l.source.id;
+            const tgt = typeof l.target === 'string' ? l.target : l.target.id;
+            if (src === d.id || tgt === d.id) {
+              connectedNodes.add(src);
+              connectedNodes.add(tgt);
+            }
+          });
+
+          // Update labels for selected + connected nodes
+          updateLabels(connectedNodes);
+
+          // Highlight links with thickness and bidirectional detection
           container.selectAll("line")
-            .classed("link-incoming", false)
-            .classed("link-outgoing", false);
-          
-          // Remove previous node selection
+            .classed("link-incoming", l => {
+              const src = typeof l.source === 'string' ? l.source : l.source.id;
+              const tgt = typeof l.target === 'string' ? l.target : l.target.id;
+              const isIncoming = tgt === d.id;
+              const isOutgoing = src === d.id;
+              // Check if bidirectional relationship exists
+              const hasBidirectional = networkData.links.some(link => {
+                const linkSrc = typeof link.source === 'string' ? link.source : link.source.id;
+                const linkTgt = typeof link.target === 'string' ? link.target : link.target.id;
+                return (linkSrc === tgt && linkTgt === src);
+              });
+              return isIncoming && !hasBidirectional;
+            })
+            .classed("link-outgoing", l => {
+              const src = typeof l.source === 'string' ? l.source : l.source.id;
+              const tgt = typeof l.target === 'string' ? l.target : l.target.id;
+              const isIncoming = tgt === d.id;
+              const isOutgoing = src === d.id;
+              // Check if bidirectional relationship exists
+              const hasBidirectional = networkData.links.some(link => {
+                const linkSrc = typeof link.source === 'string' ? link.source : link.source.id;
+                const linkTgt = typeof link.target === 'string' ? link.target : link.target.id;
+                return (linkSrc === tgt && linkTgt === src);
+              });
+              return isOutgoing && !hasBidirectional;
+            })
+            .classed("link-bidirectional", l => {
+              const src = typeof l.source === 'string' ? l.source : l.source.id;
+              const tgt = typeof l.target === 'string' ? l.target : l.target.id;
+              const isConnected = (src === d.id || tgt === d.id);
+              if (!isConnected) return false;
+              // Check if bidirectional relationship exists
+              return networkData.links.some(link => {
+                const linkSrc = typeof link.source === 'string' ? link.source : link.source.id;
+                const linkTgt = typeof link.target === 'string' ? link.target : link.target.id;
+                return (linkSrc === tgt && linkTgt === src);
+              });
+            })
+            .classed("dimmed-link", l => {
+              const src = typeof l.source === 'string' ? l.source : l.source.id;
+              const tgt = typeof l.target === 'string' ? l.target : l.target.id;
+              return !(src === d.id || tgt === d.id);
+            })
+            .attr("stroke-width", l => {
+              const src = typeof l.source === 'string' ? l.source : l.source.id;
+              const tgt = typeof l.target === 'string' ? l.target : l.target.id;
+              // Only make connected edges thicker based on frequency
+              if (src === d.id || tgt === d.id) {
+                return Math.max(2, l.value * 0.6); // More visible thickness
+              }
+              return 1; // Default thin for non-connected
+            });
+
+          // Dim unconnected nodes
           container.selectAll(".node")
-            .classed("node-selected", false);
+            .classed("dimmed-node", n => !connectedNodes.has(n.id))
+            .classed("node-selected", n => n.id === d.id)
+            .select("text")
+            .classed("dimmed-text", n => !connectedNodes.has(n.id));
 
-          // Highlight new ones
-          container.selectAll("line")
-            .filter(l => l.target.id === d.id)
-            .classed("link-incoming", true);
-
-          container.selectAll("line")
-            .filter(l => l.source.id === d.id)
-            .classed("link-outgoing", true);
-          
-          // Highlight selected node
-          d3.select(event.currentTarget)
-            .classed("node-selected", true);
-
+          // Update side panel
           const panel = document.getElementById("info-panel");
           panel.style.display = "block";
-
           document.getElementById("selected-node-id").textContent = d.id;
+          document.getElementById("selected-node-description").textContent = cweDescriptions[d.id] || "Description not available";
 
-          const incomingLinks = data.links.filter(l => l.target === d.id || l.target.id === d.id);
-          const outgoingLinks = data.links.filter(l => l.source === d.id || l.source.id === d.id);
+          const incomingLinks = networkData.links.filter(l => {
+            const tgt = typeof l.target === 'string' ? l.target : l.target.id;
+            return tgt === d.id;
+          });
+          const outgoingLinks = networkData.links.filter(l => {
+            const src = typeof l.source === 'string' ? l.source : l.source.id;
+            return src === d.id;
+          });
 
           document.getElementById("incoming-count").textContent = incomingLinks.length;
           document.getElementById("outgoing-count").textContent = outgoingLinks.length;
@@ -191,7 +508,6 @@ d3.json("cwe_network_edges.json").then(data => {
             li.textContent = `${src} → ${tgt} (${l.value})`;
             outgoingList.appendChild(li);
           });
-
         }
       }
     });
@@ -216,7 +532,6 @@ d3.json("cwe_network_edges.json").then(data => {
     node.attr("transform", d => `translate(${d.x},${d.y})`);
   });
 
-  
   function drag(simulation) {
     return d3.drag()
       .on("start", (event, d) => {
@@ -238,52 +553,245 @@ d3.json("cwe_network_edges.json").then(data => {
         }
       });
   }
+}).catch(error => {
+  console.error("Error loading data:", error);
+  alert("Error loading cwe_network_edges.json");
 });
 
-function zoomIn() {
-  svg.transition().call(zoom.scaleBy, 1.2);
-}
-function zoomOut() {
-  svg.transition().call(zoom.scaleBy, 0.8);
-}
 function resetZoom() {
-  svg.transition().call(zoom.transform, d3.zoomIdentity);
+  const initialTransform = d3.zoomIdentity
+    .translate(250, 150)
+    .scale(0.5);
+  svg.transition().call(zoom.transform, initialTransform);
 
   selectedNode = null;
   container.selectAll("line")
     .classed("link-incoming", false)
-    .classed("link-outgoing", false);
-  container.selectAll(".node").classed("node-selected", false);
+    .classed("link-outgoing", false)
+    .classed("link-bidirectional", false)
+    .classed("dimmed-link", false)
+    .attr("stroke-width", 1)
+    .attr("stroke", "#aaa");
+
+  container.selectAll(".node")
+    .classed("node-selected", false)
+    .classed("dimmed-node", false)
+    .select("text")
+    .classed("dimmed-text", false);
+
+  // Revert labels to IDs only
+  updateLabels(null);
+
   document.getElementById("info-panel").style.display = "none";
+}
+
+// Filter Panel Toggle Functions
+function toggleFilterPanel() {
+  const panel = document.getElementById("filter-panel");
+  const toggle = document.getElementById("filter-toggle");
+  
+  if (panel.classList.contains("open")) {
+    panel.classList.remove("open");
+    toggle.textContent = "⚙️ Filters";
+  } else {
+    panel.classList.add("open");
+    toggle.textContent = "⚙️ Hide";
+  }
+}
+
+// Search Functions
+function handleSearch(query) {
+  console.log('Search called with:', query); // Debug log
+  const resultsDiv = document.getElementById('search-results');
+  
+  if (query.length < 2) {
+    resultsDiv.style.display = 'none';
+    clearSearchHighlights();
+    return;
+  }
+  
+  // Check if networkData exists
+  if (!networkData || !networkData.nodes) {
+    console.log('NetworkData not ready yet');
+    resultsDiv.innerHTML = '<div class="search-no-results">Data still loading...</div>';
+    resultsDiv.style.display = 'block';
+    return;
+  }
+  
+  console.log('Searching through', networkData.nodes.length, 'nodes'); // Debug log
+  
+  // Clear previous highlights
+  clearSearchHighlights();
+  
+  // Search through nodes
+  searchResults = networkData.nodes.filter(node => {
+    const id = node.id.toLowerCase();
+    const description = (cweDescriptions[node.id] || '').toLowerCase();
+    const searchTerm = query.toLowerCase();
+    
+    const matches = id.includes(searchTerm) || description.includes(searchTerm);
+    if (matches) {
+      console.log('Found match:', node.id); // Debug log
+    }
+    return matches;
+  });
+  
+  console.log('Search results:', searchResults.length); // Debug log
+  
+  // Display results
+  displaySearchResults(searchResults, query);
+  
+  // Highlight matching nodes in visualization
+  if (searchResults.length > 0) {
+    highlightSearchResults(searchResults);
+  }
+}
+
+function displaySearchResults(results, query) {
+  const resultsDiv = document.getElementById('search-results');
+  resultsDiv.innerHTML = '';
+  
+  if (results.length === 0) {
+    resultsDiv.innerHTML = '<div class="search-no-results">No matching CWEs found</div>';
+    resultsDiv.style.display = 'block';
+    return;
+  }
+  
+  // Limit results to first 10 for performance
+  const limitedResults = results.slice(0, 10);
+  
+  limitedResults.forEach(node => {
+    const div = document.createElement('div');
+    div.className = 'search-result-item';
+    
+    const description = cweDescriptions[node.id] || 'No description available';
+    const truncatedDesc = description.length > 50 ? description.substring(0, 50) + '...' : description;
+    
+    div.innerHTML = `
+      <strong>${node.id}</strong><br>
+      <span style="color: #666; font-size: 11px;">${truncatedDesc}</span>
+    `;
+    
+    div.onclick = () => selectSearchResult(node);
+    resultsDiv.appendChild(div);
+  });
+  
+  if (results.length > 10) {
+    const moreDiv = document.createElement('div');
+    moreDiv.className = 'search-no-results';
+    moreDiv.textContent = `... and ${results.length - 10} more results`;
+    resultsDiv.appendChild(moreDiv);
+  }
+  
+  resultsDiv.style.display = 'block';
+}
+
+function selectSearchResult(node) {
+  // Hide search results
+  document.getElementById('search-results').style.display = 'none';
+  
+  // Clear the search input text
+  document.getElementById('search-input').value = '';
+  
+  // Clear any existing selection and highlights
+  clearSearchHighlights();
+  selectedNode = null;
+  
+  // Collapse the filter panel after search
+  const panel = document.getElementById("filter-panel");
+  const toggle = document.getElementById("filter-toggle");
+  panel.classList.remove("open");
+  toggle.textContent = "⚙️ Filters";
+  
+  // Find the node in the visualization and center on it
+  const nodeElement = container.selectAll('.node')
+    .filter(d => d.id === node.id);
+    
+  if (!nodeElement.empty()) {
+    const nodeData = nodeElement.datum();
+    
+    // Center the view on the selected node while keeping current zoom level
+    const currentScale = currentTransform.k; // Keep current zoom level
+    const transform = d3.zoomIdentity
+      .translate(width / 2 - nodeData.x * currentScale, height / 2 - nodeData.y * currentScale)
+      .scale(currentScale); // Use existing zoom level
+    
+    svg.transition()
+      .duration(750)
+      .call(zoom.transform, transform);
+    
+    // Simulate a click on the node after a short delay
+    setTimeout(() => {
+      // Trigger the node click handler
+      nodeElement.node().dispatchEvent(new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+        view: window
+      }));
+    }, 800);
+  }
+}
+
+function highlightSearchResults(results) {
+  highlightedNodes = new Set(results.map(node => node.id));
+  
+  // Highlight matching nodes
+  container.selectAll('.node circle')
+    .classed('search-highlight', d => highlightedNodes.has(d.id));
+}
+
+function clearSearchHighlights() {
+  highlightedNodes.clear();
+  container.selectAll('.node circle')
+    .classed('search-highlight', false);
+}
+
+function clearSearch() {
+  document.getElementById('search-input').value = '';
+  document.getElementById('search-results').style.display = 'none';
+  clearSearchHighlights();
+  searchResults = [];
 }
 </script>
 
+<!-- Info panel -->
 <div id="info-panel" style="
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  width: 200px;
+  width: 250px;
   height: 100vh;
-  background: #f0f0f0;
-  padding: 20px;
-  border-left: 1px solid #ccc;
+  background: #f8f9fa;
+  border-left: 2px solid #dee2e6;
   display: none;
-  font-family: sans-serif; font-size: 10px;
+  font-family: sans-serif;
+  font-size: 13px;
   z-index: 100;
-  overflow-y: auto;">
-  <div><strong>Total Nodes:</strong> <span id="total-nodes"></span></div>
-  <hr>
-  <div id="node-info">
-    <div><strong>Selected Node:</strong> <span id="selected-node-id"></span></div>
-    <div style="margin-top: 10px;">
-      <strong>Outgoing Connections (<span id="outgoing-count"></span>):</strong>
-      <ul id="outgoing-list"></ul>
-    </div>
-    <div style="margin-top: 10px;">
-      <strong>Incoming Connections (<span id="incoming-count"></span>):</strong>
-      <ul id="incoming-list"></ul>
+  box-shadow: -3px 0 10px rgba(0,0,0,0.1);">
+  
+  <div style="
+    height: 100%;
+    overflow-y: auto;
+    padding: 15px;
+    box-sizing: border-box;">
+    
+    <div><strong>Total Nodes:</strong> <span id="total-nodes"></span></div>
+    <hr>
+    <div id="node-info">
+      <div><strong>Selected Node:</strong> <span id="selected-node-id"></span></div>
+      <div style="margin-top: 10px;"><strong>Description:</strong></div>
+      <div id="selected-node-description" style="margin-top: 5px; font-style: italic; line-height: 1.4;"></div>
+      <div style="margin-top: 15px;">
+        <strong>Outgoing Connections (<span id="outgoing-count"></span>):</strong>
+        <ul id="outgoing-list" style="max-height: none; overflow-y: visible; margin: 10px 0; padding-left: 20px;"></ul>
+      </div>
+      <div style="margin-top: 10px;">
+        <strong>Incoming Connections (<span id="incoming-count"></span>):</strong>
+        <ul id="incoming-list" style="max-height: none; overflow-y: visible; margin: 10px 0; padding-left: 20px;"></ul>
+      </div>
     </div>
   </div>
 </div>
 
 </body>
+</html>
