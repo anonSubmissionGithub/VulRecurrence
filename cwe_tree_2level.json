@@ -1,0 +1,976 @@
+{
+  "name": "CWE Transitions",
+  "children": [
+    {
+      "name": "CWE-1021",
+      "children": [
+        {
+          "name": "CWE-209 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-119",
+      "children": [
+        {
+          "name": "CWE-119 (3)"
+        },
+        {
+          "name": "CWE-120 (8)"
+        },
+        {
+          "name": "CWE-122 (1)"
+        },
+        {
+          "name": "CWE-124 (1)"
+        },
+        {
+          "name": "CWE-125 (4)"
+        },
+        {
+          "name": "CWE-126 (3)"
+        },
+        {
+          "name": "CWE-131 (1)"
+        },
+        {
+          "name": "CWE-190 (18)"
+        },
+        {
+          "name": "CWE-191 (2)"
+        },
+        {
+          "name": "CWE-200 (2)"
+        },
+        {
+          "name": "CWE-284 (1)"
+        },
+        {
+          "name": "CWE-362 (7)"
+        },
+        {
+          "name": "CWE-367 (1)"
+        },
+        {
+          "name": "CWE-369 (1)"
+        },
+        {
+          "name": "CWE-400 (1)"
+        },
+        {
+          "name": "CWE-401 (3)"
+        },
+        {
+          "name": "CWE-415 (1)"
+        },
+        {
+          "name": "CWE-416 (2)"
+        },
+        {
+          "name": "CWE-476 (2)"
+        },
+        {
+          "name": "CWE-502 (1)"
+        },
+        {
+          "name": "CWE-610 (1)"
+        },
+        {
+          "name": "CWE-674 (1)"
+        },
+        {
+          "name": "CWE-685 (1)"
+        },
+        {
+          "name": "CWE-704 (3)"
+        },
+        {
+          "name": "CWE-755 (1)"
+        },
+        {
+          "name": "CWE-769 (1)"
+        },
+        {
+          "name": "CWE-77 (1)"
+        },
+        {
+          "name": "CWE-787 (4)"
+        },
+        {
+          "name": "CWE-824 (2)"
+        },
+        {
+          "name": "CWE-833 (1)"
+        },
+        {
+          "name": "CWE-841 (1)"
+        },
+        {
+          "name": "CWE-843 (1)"
+        },
+        {
+          "name": "CWE-93 (1)"
+        },
+        {
+          "name": "unknown (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-125",
+      "children": [
+        {
+          "name": "CWE-120 (8)"
+        },
+        {
+          "name": "CWE-121 (1)"
+        },
+        {
+          "name": "CWE-122 (2)"
+        },
+        {
+          "name": "CWE-125 (8)"
+        },
+        {
+          "name": "CWE-126 (3)"
+        },
+        {
+          "name": "CWE-190 (9)"
+        },
+        {
+          "name": "CWE-191 (2)"
+        },
+        {
+          "name": "CWE-193 (1)"
+        },
+        {
+          "name": "CWE-20 (2)"
+        },
+        {
+          "name": "CWE-362 (1)"
+        },
+        {
+          "name": "CWE-440 (1)"
+        },
+        {
+          "name": "CWE-457 (1)"
+        },
+        {
+          "name": "CWE-562 (1)"
+        },
+        {
+          "name": "CWE-665 (1)"
+        },
+        {
+          "name": "CWE-670 (1)"
+        },
+        {
+          "name": "CWE-681 (1)"
+        },
+        {
+          "name": "CWE-697 (2)"
+        },
+        {
+          "name": "CWE-787 (1)"
+        },
+        {
+          "name": "CWE-798 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-129",
+      "children": [
+        {
+          "name": "CWE-119 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-17",
+      "children": [
+        {
+          "name": "CWE-390 (1)"
+        },
+        {
+          "name": "CWE-401 (1)"
+        },
+        {
+          "name": "CWE-403 (1)"
+        },
+        {
+          "name": "unknown (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-189",
+      "children": [
+        {
+          "name": "CWE-119 (1)"
+        },
+        {
+          "name": "CWE-120 (1)"
+        },
+        {
+          "name": "CWE-126 (1)"
+        },
+        {
+          "name": "CWE-19 (1)"
+        },
+        {
+          "name": "CWE-190 (1)"
+        },
+        {
+          "name": "CWE-197 (1)"
+        },
+        {
+          "name": "CWE-252 (1)"
+        },
+        {
+          "name": "CWE-362 (2)"
+        },
+        {
+          "name": "CWE-369 (1)"
+        },
+        {
+          "name": "CWE-400 (1)"
+        },
+        {
+          "name": "CWE-401 (1)"
+        },
+        {
+          "name": "CWE-476 (1)"
+        },
+        {
+          "name": "CWE-704 (1)"
+        },
+        {
+          "name": "CWE-787 (1)"
+        },
+        {
+          "name": "CWE-823 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-19",
+      "children": [
+        {
+          "name": "CWE-362 (1)"
+        },
+        {
+          "name": "CWE-416 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-190",
+      "children": [
+        {
+          "name": "CWE-124 (1)"
+        },
+        {
+          "name": "CWE-190 (4)"
+        },
+        {
+          "name": "CWE-325 (1)"
+        },
+        {
+          "name": "CWE-358 (1)"
+        },
+        {
+          "name": "CWE-362 (1)"
+        },
+        {
+          "name": "CWE-416 (1)"
+        },
+        {
+          "name": "CWE-670 (1)"
+        },
+        {
+          "name": "CWE-672 (1)"
+        },
+        {
+          "name": "CWE-681 (1)"
+        },
+        {
+          "name": "CWE-691 (1)"
+        },
+        {
+          "name": "CWE-704 (1)"
+        },
+        {
+          "name": "CWE-74 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-20",
+      "children": [
+        {
+          "name": "CWE-116 (1)"
+        },
+        {
+          "name": "CWE-119 (4)"
+        },
+        {
+          "name": "CWE-120 (2)"
+        },
+        {
+          "name": "CWE-125 (1)"
+        },
+        {
+          "name": "CWE-128 (1)"
+        },
+        {
+          "name": "CWE-16 (1)"
+        },
+        {
+          "name": "CWE-170 (1)"
+        },
+        {
+          "name": "CWE-190 (1)"
+        },
+        {
+          "name": "CWE-265 (1)"
+        },
+        {
+          "name": "CWE-284 (1)"
+        },
+        {
+          "name": "CWE-346 (1)"
+        },
+        {
+          "name": "CWE-362 (3)"
+        },
+        {
+          "name": "CWE-400 (1)"
+        },
+        {
+          "name": "CWE-401 (1)"
+        },
+        {
+          "name": "CWE-416 (2)"
+        },
+        {
+          "name": "CWE-457 (1)"
+        },
+        {
+          "name": "CWE-476 (3)"
+        },
+        {
+          "name": "CWE-565 (1)"
+        },
+        {
+          "name": "CWE-617 (1)"
+        },
+        {
+          "name": "CWE-670 (3)"
+        },
+        {
+          "name": "CWE-671 (1)"
+        },
+        {
+          "name": "CWE-691 (1)"
+        },
+        {
+          "name": "CWE-693 (1)"
+        },
+        {
+          "name": "CWE-697 (1)"
+        },
+        {
+          "name": "CWE-73 (1)"
+        },
+        {
+          "name": "CWE-732 (1)"
+        },
+        {
+          "name": "CWE-772 (1)"
+        },
+        {
+          "name": "CWE-778 (1)"
+        },
+        {
+          "name": "CWE-78 (1)"
+        },
+        {
+          "name": "CWE-787 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-200",
+      "children": [
+        {
+          "name": "CWE-119 (2)"
+        },
+        {
+          "name": "CWE-200 (4)"
+        },
+        {
+          "name": "CWE-203 (1)"
+        },
+        {
+          "name": "CWE-209 (1)"
+        },
+        {
+          "name": "CWE-362 (1)"
+        },
+        {
+          "name": "CWE-457 (1)"
+        },
+        {
+          "name": "CWE-476 (1)"
+        },
+        {
+          "name": "CWE-665 (1)"
+        },
+        {
+          "name": "CWE-682 (1)"
+        },
+        {
+          "name": "CWE-787 (1)"
+        },
+        {
+          "name": "CWE-835 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-22",
+      "children": [
+        {
+          "name": "CWE-476 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-254",
+      "children": [
+        {
+          "name": "CWE-22 (1)"
+        },
+        {
+          "name": "CWE-476 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-264",
+      "children": [
+        {
+          "name": "CWE-119 (1)"
+        },
+        {
+          "name": "CWE-1234 (1)"
+        },
+        {
+          "name": "CWE-1241 (1)"
+        },
+        {
+          "name": "CWE-20 (1)"
+        },
+        {
+          "name": "CWE-200 (1)"
+        },
+        {
+          "name": "CWE-269 (1)"
+        },
+        {
+          "name": "CWE-272 (2)"
+        },
+        {
+          "name": "CWE-284 (1)"
+        },
+        {
+          "name": "CWE-290 (1)"
+        },
+        {
+          "name": "CWE-358 (1)"
+        },
+        {
+          "name": "CWE-362 (2)"
+        },
+        {
+          "name": "CWE-457 (1)"
+        },
+        {
+          "name": "CWE-640 (1)"
+        },
+        {
+          "name": "CWE-665 (2)"
+        },
+        {
+          "name": "CWE-669 (1)"
+        },
+        {
+          "name": "CWE-732 (1)"
+        },
+        {
+          "name": "CWE-770 (1)"
+        },
+        {
+          "name": "CWE-863 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-269",
+      "children": [
+        {
+          "name": "CWE-269 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-284",
+      "children": [
+        {
+          "name": "CWE-209 (1)"
+        },
+        {
+          "name": "CWE-362 (1)"
+        },
+        {
+          "name": "CWE-416 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-287",
+      "children": [
+        {
+          "name": "CWE-824 (1)"
+        },
+        {
+          "name": "CWE-825 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-310",
+      "children": [
+        {
+          "name": "CWE-321 (1)"
+        },
+        {
+          "name": "CWE-362 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-358",
+      "children": [
+        {
+          "name": "CWE-401 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-362",
+      "children": [
+        {
+          "name": "CWE-1281 (1)"
+        },
+        {
+          "name": "CWE-190 (1)"
+        },
+        {
+          "name": "CWE-200 (1)"
+        },
+        {
+          "name": "CWE-276 (1)"
+        },
+        {
+          "name": "CWE-362 (3)"
+        },
+        {
+          "name": "CWE-367 (1)"
+        },
+        {
+          "name": "CWE-415 (1)"
+        },
+        {
+          "name": "CWE-416 (3)"
+        },
+        {
+          "name": "CWE-476 (1)"
+        },
+        {
+          "name": "CWE-703 (1)"
+        },
+        {
+          "name": "CWE-704 (1)"
+        },
+        {
+          "name": "CWE-773 (1)"
+        },
+        {
+          "name": "CWE-833 (2)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-369",
+      "children": [
+        {
+          "name": "CWE-190 (1)"
+        },
+        {
+          "name": "CWE-400 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-388",
+      "children": [
+        {
+          "name": "CWE-670 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-399",
+      "children": [
+        {
+          "name": "CWE-119 (2)"
+        },
+        {
+          "name": "CWE-200 (2)"
+        },
+        {
+          "name": "CWE-252 (1)"
+        },
+        {
+          "name": "CWE-359 (1)"
+        },
+        {
+          "name": "CWE-362 (2)"
+        },
+        {
+          "name": "CWE-400 (1)"
+        },
+        {
+          "name": "CWE-401 (4)"
+        },
+        {
+          "name": "CWE-415 (2)"
+        },
+        {
+          "name": "CWE-416 (3)"
+        },
+        {
+          "name": "CWE-476 (2)"
+        },
+        {
+          "name": "CWE-479 (1)"
+        },
+        {
+          "name": "CWE-670 (1)"
+        },
+        {
+          "name": "CWE-672 (1)"
+        },
+        {
+          "name": "unknown (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-400",
+      "children": [
+        {
+          "name": "CWE-399 (1)"
+        },
+        {
+          "name": "CWE-787 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-415",
+      "children": [
+        {
+          "name": "CWE-193 (1)"
+        },
+        {
+          "name": "CWE-284 (1)"
+        },
+        {
+          "name": "CWE-362 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-416",
+      "children": [
+        {
+          "name": "CWE-120 (1)"
+        },
+        {
+          "name": "CWE-125 (3)"
+        },
+        {
+          "name": "CWE-190 (1)"
+        },
+        {
+          "name": "CWE-191 (1)"
+        },
+        {
+          "name": "CWE-202 (1)"
+        },
+        {
+          "name": "CWE-290 (1)"
+        },
+        {
+          "name": "CWE-346 (1)"
+        },
+        {
+          "name": "CWE-361 (1)"
+        },
+        {
+          "name": "CWE-362 (3)"
+        },
+        {
+          "name": "CWE-367 (1)"
+        },
+        {
+          "name": "CWE-401 (1)"
+        },
+        {
+          "name": "CWE-415 (2)"
+        },
+        {
+          "name": "CWE-416 (5)"
+        },
+        {
+          "name": "CWE-610 (1)"
+        },
+        {
+          "name": "CWE-667 (1)"
+        },
+        {
+          "name": "CWE-798 (1)"
+        },
+        {
+          "name": "CWE-833 (2)"
+        },
+        {
+          "name": "CWE-910 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-426",
+      "children": [
+        {
+          "name": "CWE-346 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-476",
+      "children": [
+        {
+          "name": "CWE-121 (1)"
+        },
+        {
+          "name": "CWE-190 (2)"
+        },
+        {
+          "name": "CWE-325 (1)"
+        },
+        {
+          "name": "CWE-327 (1)"
+        },
+        {
+          "name": "CWE-362 (2)"
+        },
+        {
+          "name": "CWE-401 (2)"
+        },
+        {
+          "name": "CWE-416 (1)"
+        },
+        {
+          "name": "CWE-457 (1)"
+        },
+        {
+          "name": "CWE-476 (3)"
+        },
+        {
+          "name": "CWE-521 (1)"
+        },
+        {
+          "name": "CWE-617 (1)"
+        },
+        {
+          "name": "CWE-704 (1)"
+        },
+        {
+          "name": "CWE-755 (1)"
+        },
+        {
+          "name": "CWE-833 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-532",
+      "children": [
+        {
+          "name": "CWE-294 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-59",
+      "children": [
+        {
+          "name": "CWE-59 (2)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-617",
+      "children": [
+        {
+          "name": "CWE-401 (1)"
+        },
+        {
+          "name": "CWE-703 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-74",
+      "children": [
+        {
+          "name": "CWE-330 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-772",
+      "children": [
+        {
+          "name": "CWE-120 (1)"
+        },
+        {
+          "name": "CWE-401 (2)"
+        },
+        {
+          "name": "CWE-416 (1)"
+        },
+        {
+          "name": "CWE-835 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-787",
+      "children": [
+        {
+          "name": "CWE-120 (1)"
+        },
+        {
+          "name": "CWE-190 (1)"
+        },
+        {
+          "name": "CWE-20 (1)"
+        },
+        {
+          "name": "CWE-400 (1)"
+        },
+        {
+          "name": "CWE-754 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-79",
+      "children": [
+        {
+          "name": "CWE-288 (1)"
+        },
+        {
+          "name": "CWE-755 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-834",
+      "children": [
+        {
+          "name": "CWE-401 (2)"
+        },
+        {
+          "name": "CWE-416 (1)"
+        },
+        {
+          "name": "CWE-704 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-835",
+      "children": [
+        {
+          "name": "CWE-362 (1)"
+        },
+        {
+          "name": "CWE-400 (1)"
+        },
+        {
+          "name": "CWE-457 (1)"
+        },
+        {
+          "name": "CWE-674 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-862",
+      "children": [
+        {
+          "name": "CWE-269 (1)"
+        },
+        {
+          "name": "CWE-863 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-89",
+      "children": [
+        {
+          "name": "CWE-287 (1)"
+        },
+        {
+          "name": "CWE-89 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-918",
+      "children": [
+        {
+          "name": "CWE-338 (1)"
+        }
+      ]
+    },
+    {
+      "name": "CWE-94",
+      "children": [
+        {
+          "name": "CWE-404 (1)"
+        },
+        {
+          "name": "CWE-787 (1)"
+        }
+      ]
+    }
+  ]
+}
