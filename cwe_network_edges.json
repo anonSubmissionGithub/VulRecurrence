@@ -1,393 +1,817 @@
 {
   "nodes": [
     {
-      "id": "CWE-1021"
+      "id": "CWE-1021",
+      "description": "Improper Restriction of Rendered UI Layers or Frames"
     },
     {
-      "id": "CWE-116"
+      "id": "CWE-111",
+      "description": "Direct Use of Unsafe JNI"
     },
     {
-      "id": "CWE-119"
+      "id": "CWE-116",
+      "description": "Improper Encoding or Escaping of Output"
     },
     {
-      "id": "CWE-120"
+      "id": "CWE-117",
+      "description": "Improper Output Neutralization for Logs"
     },
     {
-      "id": "CWE-121"
+      "id": "CWE-118",
+      "description": "Incorrect Access of Indexable Resource ('Range Error')"
     },
     {
-      "id": "CWE-122"
+      "id": "CWE-119",
+      "description": "Improper Restriction of Operations within the Bounds of a Memory Buffer"
     },
     {
-      "id": "CWE-1234"
+      "id": "CWE-120",
+      "description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')"
     },
     {
-      "id": "CWE-124"
+      "id": "CWE-121",
+      "description": "Stack-based Buffer Overflow"
     },
     {
-      "id": "CWE-1241"
+      "id": "CWE-122",
+      "description": "Heap-based Buffer Overflow"
     },
     {
-      "id": "CWE-125"
+      "id": "CWE-123",
+      "description": "Write-what-where Condition"
     },
     {
-      "id": "CWE-126"
+      "id": "CWE-124",
+      "description": "Buffer Underwrite ('Buffer Underflow')"
     },
     {
-      "id": "CWE-128"
+      "id": "CWE-125",
+      "description": "Out-of-bounds Read"
     },
     {
-      "id": "CWE-1281"
+      "id": "CWE-126",
+      "description": "Buffer Over-read"
     },
     {
-      "id": "CWE-129"
+      "id": "CWE-127",
+      "description": "Buffer Under-read"
     },
     {
-      "id": "CWE-131"
+      "id": "CWE-128",
+      "description": "Wrap-around Error"
     },
     {
-      "id": "CWE-16"
+      "id": "CWE-1284",
+      "description": "Improper Validation of Specified Quantity in Input"
     },
     {
-      "id": "CWE-17"
+      "id": "CWE-129",
+      "description": "Improper Validation of Array Index"
     },
     {
-      "id": "CWE-170"
+      "id": "CWE-130",
+      "description": "Improper Handling of Length Parameter Inconsistency"
     },
     {
-      "id": "CWE-189"
+      "id": "CWE-131",
+      "description": "Incorrect Calculation of Buffer Size"
     },
     {
-      "id": "CWE-19"
+      "id": "CWE-1325",
+      "description": "Improperly Controlled Sequential Memory Allocation"
     },
     {
-      "id": "CWE-190"
+      "id": "CWE-134",
+      "description": "Use of Externally-Controlled Format String"
     },
     {
-      "id": "CWE-191"
+      "id": "CWE-159",
+      "description": "Improper Handling of Invalid Use of Special Elements"
     },
     {
-      "id": "CWE-193"
+      "id": "CWE-16",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-197"
+      "id": "CWE-166",
+      "description": "Improper Handling of Missing Special Element"
     },
     {
-      "id": "CWE-20"
+      "id": "CWE-17",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-200"
+      "id": "CWE-170",
+      "description": "Improper Null Termination"
     },
     {
-      "id": "CWE-202"
+      "id": "CWE-173",
+      "description": "Improper Handling of Alternate Encoding"
     },
     {
-      "id": "CWE-203"
+      "id": "CWE-184",
+      "description": "Incomplete List of Disallowed Inputs"
     },
     {
-      "id": "CWE-209"
+      "id": "CWE-188",
+      "description": "Reliance on Data/Memory Layout"
     },
     {
-      "id": "CWE-22"
+      "id": "CWE-189",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-252"
+      "id": "CWE-19",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-254"
+      "id": "CWE-190",
+      "description": "Integer Overflow or Wraparound"
     },
     {
-      "id": "CWE-264"
+      "id": "CWE-191",
+      "description": "Integer Underflow (Wrap or Wraparound)"
     },
     {
-      "id": "CWE-265"
+      "id": "CWE-193",
+      "description": "Off-by-one Error"
     },
     {
-      "id": "CWE-269"
+      "id": "CWE-195",
+      "description": "Signed to Unsigned Conversion Error"
     },
     {
-      "id": "CWE-272"
+      "id": "CWE-197",
+      "description": "Numeric Truncation Error"
     },
     {
-      "id": "CWE-276"
+      "id": "CWE-20",
+      "description": "Improper Input Validation"
     },
     {
-      "id": "CWE-284"
+      "id": "CWE-200",
+      "description": "Exposure of Sensitive Information to an Unauthorized Actor"
     },
     {
-      "id": "CWE-287"
+      "id": "CWE-201",
+      "description": "Insertion of Sensitive Information Into Sent Data"
     },
     {
-      "id": "CWE-288"
+      "id": "CWE-203",
+      "description": "Observable Discrepancy"
     },
     {
-      "id": "CWE-290"
+      "id": "CWE-208",
+      "description": "Observable Timing Discrepancy"
     },
     {
-      "id": "CWE-294"
+      "id": "CWE-209",
+      "description": "Generation of Error Message Containing Sensitive Information"
     },
     {
-      "id": "CWE-310"
+      "id": "CWE-22",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
     },
     {
-      "id": "CWE-321"
+      "id": "CWE-226",
+      "description": "Sensitive Information in Resource Not Removed Before Reuse"
     },
     {
-      "id": "CWE-325"
+      "id": "CWE-248",
+      "description": "Uncaught Exception"
     },
     {
-      "id": "CWE-327"
+      "id": "CWE-252",
+      "description": "Unchecked Return Value"
     },
     {
-      "id": "CWE-330"
+      "id": "CWE-253",
+      "description": "Incorrect Check of Function Return Value"
     },
     {
-      "id": "CWE-338"
+      "id": "CWE-254",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-346"
+      "id": "CWE-264",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-358"
+      "id": "CWE-266",
+      "description": "Incorrect Privilege Assignment"
     },
     {
-      "id": "CWE-359"
+      "id": "CWE-269",
+      "description": "Improper Privilege Management"
     },
     {
-      "id": "CWE-361"
+      "id": "CWE-272",
+      "description": "Least Privilege Violation"
     },
     {
-      "id": "CWE-362"
+      "id": "CWE-275",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-367"
+      "id": "CWE-276",
+      "description": "Incorrect Default Permissions"
     },
     {
-      "id": "CWE-369"
+      "id": "CWE-280",
+      "description": "Improper Handling of Insufficient Permissions or Privileges "
     },
     {
-      "id": "CWE-388"
+      "id": "CWE-284",
+      "description": "Improper Access Control"
     },
     {
-      "id": "CWE-390"
+      "id": "CWE-285",
+      "description": "Improper Authorization"
     },
     {
-      "id": "CWE-399"
+      "id": "CWE-287",
+      "description": "Improper Authentication"
     },
     {
-      "id": "CWE-400"
+      "id": "CWE-288",
+      "description": "Authentication Bypass Using an Alternate Path or Channel"
     },
     {
-      "id": "CWE-401"
+      "id": "CWE-290",
+      "description": "Authentication Bypass by Spoofing"
     },
     {
-      "id": "CWE-403"
+      "id": "CWE-295",
+      "description": "Improper Certificate Validation"
     },
     {
-      "id": "CWE-404"
+      "id": "CWE-299",
+      "description": "Improper Check for Certificate Revocation"
     },
     {
-      "id": "CWE-415"
+      "id": "CWE-302",
+      "description": "Authentication Bypass by Assumed-Immutable Data"
     },
     {
-      "id": "CWE-416"
+      "id": "CWE-303",
+      "description": "Incorrect Implementation of Authentication Algorithm"
     },
     {
-      "id": "CWE-426"
+      "id": "CWE-305",
+      "description": "Authentication Bypass by Primary Weakness"
     },
     {
-      "id": "CWE-440"
+      "id": "CWE-306",
+      "description": "Missing Authentication for Critical Function"
     },
     {
-      "id": "CWE-457"
+      "id": "CWE-307",
+      "description": "Improper Restriction of Excessive Authentication Attempts"
     },
     {
-      "id": "CWE-476"
+      "id": "CWE-310",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-479"
+      "id": "CWE-321",
+      "description": "Use of Hard-coded Cryptographic Key"
     },
     {
-      "id": "CWE-502"
+      "id": "CWE-327",
+      "description": "Use of a Broken or Risky Cryptographic Algorithm"
     },
     {
-      "id": "CWE-521"
+      "id": "CWE-330",
+      "description": "Use of Insufficiently Random Values"
     },
     {
-      "id": "CWE-532"
+      "id": "CWE-331",
+      "description": "Insufficient Entropy"
     },
     {
-      "id": "CWE-562"
+      "id": "CWE-337",
+      "description": "Predictable Seed in Pseudo-Random Number Generator (PRNG)"
     },
     {
-      "id": "CWE-565"
+      "id": "CWE-338",
+      "description": "Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)"
     },
     {
-      "id": "CWE-59"
+      "id": "CWE-346",
+      "description": "Origin Validation Error"
     },
     {
-      "id": "CWE-610"
+      "id": "CWE-347",
+      "description": "Improper Verification of Cryptographic Signature"
     },
     {
-      "id": "CWE-617"
+      "id": "CWE-352",
+      "description": "Cross-Site Request Forgery (CSRF)"
     },
     {
-      "id": "CWE-640"
+      "id": "CWE-354",
+      "description": "Improper Validation of Integrity Check Value"
     },
     {
-      "id": "CWE-665"
+      "id": "CWE-358",
+      "description": "Improperly Implemented Security Check for Standard"
     },
     {
-      "id": "CWE-667"
+      "id": "CWE-361",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-669"
+      "id": "CWE-362",
+      "description": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')"
     },
     {
-      "id": "CWE-670"
+      "id": "CWE-363",
+      "description": "Race Condition Enabling Link Following"
     },
     {
-      "id": "CWE-671"
+      "id": "CWE-366",
+      "description": "Race Condition within a Thread"
     },
     {
-      "id": "CWE-672"
+      "id": "CWE-367",
+      "description": "Time-of-check Time-of-use (TOCTOU) Race Condition"
     },
     {
-      "id": "CWE-674"
+      "id": "CWE-369",
+      "description": "Divide By Zero"
     },
     {
-      "id": "CWE-681"
+      "id": "CWE-384",
+      "description": "Session Fixation"
     },
     {
-      "id": "CWE-682"
+      "id": "CWE-385",
+      "description": "Covert Timing Channel"
     },
     {
-      "id": "CWE-685"
+      "id": "CWE-388",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-691"
+      "id": "CWE-390",
+      "description": "Detection of Error Condition Without Action"
     },
     {
-      "id": "CWE-693"
+      "id": "CWE-398",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-697"
+      "id": "CWE-399",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-703"
+      "id": "CWE-400",
+      "description": "Uncontrolled Resource Consumption"
     },
     {
-      "id": "CWE-704"
+      "id": "CWE-401",
+      "description": "Missing Release of Memory after Effective Lifetime"
     },
     {
-      "id": "CWE-73"
+      "id": "CWE-404",
+      "description": "Improper Resource Shutdown or Release"
     },
     {
-      "id": "CWE-732"
+      "id": "CWE-411",
+      "description": "Description not available"
     },
     {
-      "id": "CWE-74"
+      "id": "CWE-415",
+      "description": "Double Free"
     },
     {
-      "id": "CWE-754"
+      "id": "CWE-416",
+      "description": "Use After Free"
     },
     {
-      "id": "CWE-755"
+      "id": "CWE-425",
+      "description": "Direct Request ('Forced Browsing')"
     },
     {
-      "id": "CWE-769"
+      "id": "CWE-426",
+      "description": "Untrusted Search Path"
     },
     {
-      "id": "CWE-77"
+      "id": "CWE-436",
+      "description": "Interpretation Conflict"
     },
     {
-      "id": "CWE-770"
+      "id": "CWE-456",
+      "description": "Missing Initialization of a Variable"
     },
     {
-      "id": "CWE-772"
+      "id": "CWE-457",
+      "description": "Use of Uninitialized Variable"
     },
     {
-      "id": "CWE-773"
+      "id": "CWE-459",
+      "description": "Incomplete Cleanup"
     },
     {
-      "id": "CWE-778"
+      "id": "CWE-472",
+      "description": "External Control of Assumed-Immutable Web Parameter"
     },
     {
-      "id": "CWE-78"
+      "id": "CWE-476",
+      "description": "NULL Pointer Dereference"
     },
     {
-      "id": "CWE-787"
+      "id": "CWE-477",
+      "description": "Use of Obsolete Function"
     },
     {
-      "id": "CWE-79"
+      "id": "CWE-479",
+      "description": "Signal Handler Use of a Non-reentrant Function"
     },
     {
-      "id": "CWE-798"
+      "id": "CWE-480",
+      "description": "Use of Incorrect Operator"
     },
     {
-      "id": "CWE-823"
+      "id": "CWE-494",
+      "description": "Download of Code Without Integrity Check"
     },
     {
-      "id": "CWE-824"
+      "id": "CWE-502",
+      "description": "Deserialization of Untrusted Data"
     },
     {
-      "id": "CWE-825"
+      "id": "CWE-522",
+      "description": "Insufficiently Protected Credentials"
     },
     {
-      "id": "CWE-833"
+      "id": "CWE-532",
+      "description": "Insertion of Sensitive Information into Log File"
     },
     {
-      "id": "CWE-834"
+      "id": "CWE-561",
+      "description": "Dead Code"
     },
     {
-      "id": "CWE-835"
+      "id": "CWE-563",
+      "description": "Assignment to Variable without Use"
     },
     {
-      "id": "CWE-841"
+      "id": "CWE-59",
+      "description": "Improper Link Resolution Before File Access ('Link Following')"
     },
     {
-      "id": "CWE-843"
+      "id": "CWE-590",
+      "description": "Free of Memory not on the Heap"
     },
     {
-      "id": "CWE-862"
+      "id": "CWE-601",
+      "description": "URL Redirection to Untrusted Site ('Open Redirect')"
     },
     {
-      "id": "CWE-863"
+      "id": "CWE-602",
+      "description": "Client-Side Enforcement of Server-Side Security"
     },
     {
-      "id": "CWE-89"
+      "id": "CWE-611",
+      "description": "Improper Restriction of XML External Entity Reference"
     },
     {
-      "id": "CWE-910"
+      "id": "CWE-616",
+      "description": "Incomplete Identification of Uploaded File Variables (PHP)"
     },
     {
-      "id": "CWE-918"
+      "id": "CWE-617",
+      "description": "Reachable Assertion"
     },
     {
-      "id": "CWE-93"
+      "id": "CWE-628",
+      "description": "Function Call with Incorrectly Specified Arguments"
     },
     {
-      "id": "CWE-94"
+      "id": "CWE-640",
+      "description": "Weak Password Recovery Mechanism for Forgotten Password"
     },
     {
-      "id": "unknown"
+      "id": "CWE-642",
+      "description": "External Control of Critical State Data"
+    },
+    {
+      "id": "CWE-656",
+      "description": "Reliance on Security Through Obscurity"
+    },
+    {
+      "id": "CWE-661",
+      "description": "Description not available"
+    },
+    {
+      "id": "CWE-662",
+      "description": "Improper Synchronization"
+    },
+    {
+      "id": "CWE-664",
+      "description": "Improper Control of a Resource Through its Lifetime"
+    },
+    {
+      "id": "CWE-665",
+      "description": "Improper Initialization"
+    },
+    {
+      "id": "CWE-666",
+      "description": "Operation on Resource in Wrong Phase of Lifetime"
+    },
+    {
+      "id": "CWE-667",
+      "description": "Improper Locking"
+    },
+    {
+      "id": "CWE-668",
+      "description": "Exposure of Resource to Wrong Sphere"
+    },
+    {
+      "id": "CWE-669",
+      "description": "Incorrect Resource Transfer Between Spheres"
+    },
+    {
+      "id": "CWE-670",
+      "description": "Always-Incorrect Control Flow Implementation"
+    },
+    {
+      "id": "CWE-671",
+      "description": "Lack of Administrator Control over Security"
+    },
+    {
+      "id": "CWE-672",
+      "description": "Operation on a Resource after Expiration or Release"
+    },
+    {
+      "id": "CWE-674",
+      "description": "Uncontrolled Recursion"
+    },
+    {
+      "id": "CWE-681",
+      "description": "Incorrect Conversion between Numeric Types"
+    },
+    {
+      "id": "CWE-682",
+      "description": "Incorrect Calculation"
+    },
+    {
+      "id": "CWE-683",
+      "description": "Function Call With Incorrect Order of Arguments"
+    },
+    {
+      "id": "CWE-685",
+      "description": "Function Call With Incorrect Number of Arguments"
+    },
+    {
+      "id": "CWE-690",
+      "description": "Unchecked Return Value to NULL Pointer Dereference"
+    },
+    {
+      "id": "CWE-691",
+      "description": "Insufficient Control Flow Management"
+    },
+    {
+      "id": "CWE-693",
+      "description": "Protection Mechanism Failure"
+    },
+    {
+      "id": "CWE-697",
+      "description": "Incorrect Comparison"
+    },
+    {
+      "id": "CWE-703",
+      "description": "Improper Check or Handling of Exceptional Conditions"
+    },
+    {
+      "id": "CWE-704",
+      "description": "Incorrect Type Conversion or Cast"
+    },
+    {
+      "id": "CWE-705",
+      "description": "Incorrect Control Flow Scoping"
+    },
+    {
+      "id": "CWE-707",
+      "description": "Improper Neutralization"
+    },
+    {
+      "id": "CWE-710",
+      "description": "Improper Adherence to Coding Standards"
+    },
+    {
+      "id": "CWE-73",
+      "description": "External Control of File Name or Path"
+    },
+    {
+      "id": "CWE-732",
+      "description": "Incorrect Permission Assignment for Critical Resource"
+    },
+    {
+      "id": "CWE-733",
+      "description": "Compiler Optimization Removal or Modification of Security-critical Code"
+    },
+    {
+      "id": "CWE-74",
+      "description": "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"
+    },
+    {
+      "id": "CWE-749",
+      "description": "Exposed Dangerous Method or Function"
+    },
+    {
+      "id": "CWE-754",
+      "description": "Improper Check for Unusual or Exceptional Conditions"
+    },
+    {
+      "id": "CWE-755",
+      "description": "Improper Handling of Exceptional Conditions"
+    },
+    {
+      "id": "CWE-758",
+      "description": "Reliance on Undefined, Unspecified, or Implementation-Defined Behavior"
+    },
+    {
+      "id": "CWE-763",
+      "description": "Release of Invalid Pointer or Reference"
+    },
+    {
+      "id": "CWE-764",
+      "description": "Multiple Locks of a Critical Resource"
+    },
+    {
+      "id": "CWE-77",
+      "description": "Improper Neutralization of Special Elements used in a Command ('Command Injection')"
+    },
+    {
+      "id": "CWE-770",
+      "description": "Allocation of Resources Without Limits or Throttling"
+    },
+    {
+      "id": "CWE-772",
+      "description": "Missing Release of Resource after Effective Lifetime"
+    },
+    {
+      "id": "CWE-775",
+      "description": "Missing Release of File Descriptor or Handle after Effective Lifetime"
+    },
+    {
+      "id": "CWE-778",
+      "description": "Insufficient Logging"
+    },
+    {
+      "id": "CWE-78",
+      "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+    },
+    {
+      "id": "CWE-780",
+      "description": "Use of RSA Algorithm without OAEP"
+    },
+    {
+      "id": "CWE-783",
+      "description": "Operator Precedence Logic Error"
+    },
+    {
+      "id": "CWE-787",
+      "description": "Out-of-bounds Write"
+    },
+    {
+      "id": "CWE-788",
+      "description": "Access of Memory Location After End of Buffer"
+    },
+    {
+      "id": "CWE-79",
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+    },
+    {
+      "id": "CWE-80",
+      "description": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)"
+    },
+    {
+      "id": "CWE-805",
+      "description": "Buffer Access with Incorrect Length Value"
+    },
+    {
+      "id": "CWE-819",
+      "description": "Description not available"
+    },
+    {
+      "id": "CWE-823",
+      "description": "Use of Out-of-range Pointer Offset"
+    },
+    {
+      "id": "CWE-824",
+      "description": "Access of Uninitialized Pointer"
+    },
+    {
+      "id": "CWE-825",
+      "description": "Expired Pointer Dereference"
+    },
+    {
+      "id": "CWE-828",
+      "description": "Signal Handler with Functionality that is not Asynchronous-Safe"
+    },
+    {
+      "id": "CWE-829",
+      "description": "Inclusion of Functionality from Untrusted Control Sphere"
+    },
+    {
+      "id": "CWE-833",
+      "description": "Deadlock"
+    },
+    {
+      "id": "CWE-834",
+      "description": "Excessive Iteration"
+    },
+    {
+      "id": "CWE-835",
+      "description": "Loop with Unreachable Exit Condition ('Infinite Loop')"
+    },
+    {
+      "id": "CWE-838",
+      "description": "Inappropriate Encoding for Output Context"
+    },
+    {
+      "id": "CWE-840",
+      "description": "Description not available"
+    },
+    {
+      "id": "CWE-841",
+      "description": "Improper Enforcement of Behavioral Workflow"
+    },
+    {
+      "id": "CWE-843",
+      "description": "Access of Resource Using Incompatible Type ('Type Confusion')"
+    },
+    {
+      "id": "CWE-862",
+      "description": "Missing Authorization"
+    },
+    {
+      "id": "CWE-863",
+      "description": "Incorrect Authorization"
+    },
+    {
+      "id": "CWE-88",
+      "description": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')"
+    },
+    {
+      "id": "CWE-89",
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+    },
+    {
+      "id": "CWE-908",
+      "description": "Use of Uninitialized Resource"
+    },
+    {
+      "id": "CWE-91",
+      "description": "XML Injection (aka Blind XPath Injection)"
+    },
+    {
+      "id": "CWE-913",
+      "description": "Improper Control of Dynamically-Managed Code Resources"
+    },
+    {
+      "id": "CWE-915",
+      "description": "Improperly Controlled Modification of Dynamically-Determined Object Attributes"
+    },
+    {
+      "id": "CWE-918",
+      "description": "Server-Side Request Forgery (SSRF)"
+    },
+    {
+      "id": "CWE-922",
+      "description": "Insecure Storage of Sensitive Information"
+    },
+    {
+      "id": "CWE-93",
+      "description": "Improper Neutralization of CRLF Sequences ('CRLF Injection')"
+    },
+    {
+      "id": "CWE-94",
+      "description": "Improper Control of Generation of Code ('Code Injection')"
+    },
+    {
+      "id": "CWE-943",
+      "description": "Improper Neutralization of Special Elements in Data Query Logic"
     }
   ],
   "links": [
     {
       "source": "CWE-1021",
-      "target": "CWE-209",
+      "target": "CWE-200",
       "value": 1
     },
     {
       "source": "CWE-119",
-      "target": "CWE-119",
-      "value": 3
+      "target": "CWE-120",
+      "value": 6
     },
     {
       "source": "CWE-119",
-      "target": "CWE-120",
-      "value": 8
+      "target": "CWE-121",
+      "value": 1
     },
     {
       "source": "CWE-119",
@@ -402,22 +826,57 @@
     {
       "source": "CWE-119",
       "target": "CWE-125",
-      "value": 4
+      "value": 15
     },
     {
       "source": "CWE-119",
       "target": "CWE-126",
-      "value": 3
+      "value": 4
     },
     {
       "source": "CWE-119",
-      "target": "CWE-131",
+      "target": "CWE-127",
       "value": 1
     },
     {
       "source": "CWE-119",
+      "target": "CWE-1284",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-129",
+      "value": 2
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-130",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-131",
+      "value": 4
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-134",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-173",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-188",
+      "value": 2
+    },
+    {
+      "source": "CWE-119",
       "target": "CWE-190",
-      "value": 18
+      "value": 26
     },
     {
       "source": "CWE-119",
@@ -426,7 +885,22 @@
     },
     {
       "source": "CWE-119",
-      "target": "CWE-200",
+      "target": "CWE-193",
+      "value": 2
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-195",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-197",
+      "value": 2
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-20",
       "value": 2
     },
     {
@@ -436,17 +910,32 @@
     },
     {
       "source": "CWE-119",
-      "target": "CWE-362",
-      "value": 7
-    },
-    {
-      "source": "CWE-119",
-      "target": "CWE-367",
+      "target": "CWE-327",
       "value": 1
     },
     {
       "source": "CWE-119",
+      "target": "CWE-361",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-362",
+      "value": 9
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-367",
+      "value": 3
+    },
+    {
+      "source": "CWE-119",
       "target": "CWE-369",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-399",
       "value": 1
     },
     {
@@ -457,22 +946,42 @@
     {
       "source": "CWE-119",
       "target": "CWE-401",
-      "value": 3
+      "value": 7
     },
     {
       "source": "CWE-119",
-      "target": "CWE-415",
+      "target": "CWE-404",
       "value": 1
     },
     {
       "source": "CWE-119",
+      "target": "CWE-411",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-415",
+      "value": 5
+    },
+    {
+      "source": "CWE-119",
       "target": "CWE-416",
+      "value": 4
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-456",
       "value": 2
     },
     {
       "source": "CWE-119",
+      "target": "CWE-457",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
       "target": "CWE-476",
-      "value": 2
+      "value": 8
     },
     {
       "source": "CWE-119",
@@ -481,7 +990,27 @@
     },
     {
       "source": "CWE-119",
-      "target": "CWE-610",
+      "target": "CWE-640",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-661",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-665",
+      "value": 2
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-667",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-671",
       "value": 1
     },
     {
@@ -491,22 +1020,37 @@
     },
     {
       "source": "CWE-119",
+      "target": "CWE-682",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
       "target": "CWE-685",
       "value": 1
     },
     {
       "source": "CWE-119",
-      "target": "CWE-704",
+      "target": "CWE-693",
+      "value": 5
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-703",
       "value": 3
     },
     {
       "source": "CWE-119",
-      "target": "CWE-755",
+      "target": "CWE-704",
+      "value": 4
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-705",
       "value": 1
     },
     {
       "source": "CWE-119",
-      "target": "CWE-769",
+      "target": "CWE-732",
       "value": 1
     },
     {
@@ -516,13 +1060,23 @@
     },
     {
       "source": "CWE-119",
-      "target": "CWE-787",
-      "value": 4
+      "target": "CWE-770",
+      "value": 1
     },
     {
       "source": "CWE-119",
-      "target": "CWE-824",
-      "value": 2
+      "target": "CWE-775",
+      "value": 1
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-787",
+      "value": 6
+    },
+    {
+      "source": "CWE-119",
+      "target": "CWE-819",
+      "value": 1
     },
     {
       "source": "CWE-119",
@@ -531,13 +1085,13 @@
     },
     {
       "source": "CWE-119",
-      "target": "CWE-841",
+      "target": "CWE-840",
       "value": 1
     },
     {
       "source": "CWE-119",
       "target": "CWE-843",
-      "value": 1
+      "value": 2
     },
     {
       "source": "CWE-119",
@@ -545,14 +1099,79 @@
       "value": 1
     },
     {
-      "source": "CWE-119",
-      "target": "unknown",
+      "source": "CWE-120",
+      "target": "CWE-119",
+      "value": 1
+    },
+    {
+      "source": "CWE-120",
+      "target": "CWE-131",
+      "value": 1
+    },
+    {
+      "source": "CWE-120",
+      "target": "CWE-190",
+      "value": 3
+    },
+    {
+      "source": "CWE-120",
+      "target": "CWE-369",
+      "value": 1
+    },
+    {
+      "source": "CWE-120",
+      "target": "CWE-401",
+      "value": 1
+    },
+    {
+      "source": "CWE-120",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-120",
+      "target": "CWE-787",
+      "value": 1
+    },
+    {
+      "source": "CWE-120",
+      "target": "CWE-834",
+      "value": 1
+    },
+    {
+      "source": "CWE-120",
+      "target": "CWE-94",
+      "value": 1
+    },
+    {
+      "source": "CWE-121",
+      "target": "CWE-682",
+      "value": 1
+    },
+    {
+      "source": "CWE-122",
+      "target": "CWE-190",
+      "value": 2
+    },
+    {
+      "source": "CWE-122",
+      "target": "CWE-401",
       "value": 1
     },
     {
       "source": "CWE-125",
+      "target": "CWE-111",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-119",
+      "value": 9
+    },
+    {
+      "source": "CWE-125",
       "target": "CWE-120",
-      "value": 8
+      "value": 3
     },
     {
       "source": "CWE-125",
@@ -566,23 +1185,33 @@
     },
     {
       "source": "CWE-125",
-      "target": "CWE-125",
-      "value": 8
+      "target": "CWE-124",
+      "value": 1
     },
     {
       "source": "CWE-125",
       "target": "CWE-126",
-      "value": 3
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-131",
+      "value": 2
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-166",
+      "value": 1
     },
     {
       "source": "CWE-125",
       "target": "CWE-190",
-      "value": 9
+      "value": 23
     },
     {
       "source": "CWE-125",
       "target": "CWE-191",
-      "value": 2
+      "value": 1
     },
     {
       "source": "CWE-125",
@@ -591,38 +1220,73 @@
     },
     {
       "source": "CWE-125",
+      "target": "CWE-195",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
       "target": "CWE-20",
+      "value": 6
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-200",
       "value": 2
     },
     {
       "source": "CWE-125",
       "target": "CWE-362",
+      "value": 2
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-400",
       "value": 1
     },
     {
       "source": "CWE-125",
-      "target": "CWE-440",
+      "target": "CWE-401",
+      "value": 3
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-404",
       "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-415",
+      "value": 2
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-416",
+      "value": 2
     },
     {
       "source": "CWE-125",
       "target": "CWE-457",
-      "value": 1
+      "value": 3
     },
     {
       "source": "CWE-125",
-      "target": "CWE-562",
+      "target": "CWE-476",
+      "value": 7
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-611",
       "value": 1
     },
     {
       "source": "CWE-125",
       "target": "CWE-665",
-      "value": 1
+      "value": 2
     },
     {
       "source": "CWE-125",
-      "target": "CWE-670",
-      "value": 1
+      "target": "CWE-672",
+      "value": 2
     },
     {
       "source": "CWE-125",
@@ -631,27 +1295,122 @@
     },
     {
       "source": "CWE-125",
+      "target": "CWE-682",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-683",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-685",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-693",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
       "target": "CWE-697",
+      "value": 3
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-703",
       "value": 2
     },
     {
       "source": "CWE-125",
-      "target": "CWE-787",
+      "target": "CWE-704",
       "value": 1
     },
     {
       "source": "CWE-125",
-      "target": "CWE-798",
+      "target": "CWE-733",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-772",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-775",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-787",
+      "value": 25
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-788",
+      "value": 2
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-824",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-834",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-835",
+      "value": 1
+    },
+    {
+      "source": "CWE-125",
+      "target": "CWE-841",
+      "value": 2
+    },
+    {
+      "source": "CWE-1284",
+      "target": "CWE-354",
       "value": 1
     },
     {
       "source": "CWE-129",
-      "target": "CWE-119",
+      "target": "CWE-120",
+      "value": 1
+    },
+    {
+      "source": "CWE-129",
+      "target": "CWE-190",
+      "value": 1
+    },
+    {
+      "source": "CWE-131",
+      "target": "CWE-125",
+      "value": 1
+    },
+    {
+      "source": "CWE-16",
+      "target": "CWE-770",
       "value": 1
     },
     {
       "source": "CWE-17",
-      "target": "CWE-390",
+      "target": "CWE-266",
+      "value": 1
+    },
+    {
+      "source": "CWE-17",
+      "target": "CWE-276",
+      "value": 1
+    },
+    {
+      "source": "CWE-17",
+      "target": "CWE-388",
       "value": 1
     },
     {
@@ -661,12 +1420,32 @@
     },
     {
       "source": "CWE-17",
-      "target": "CWE-403",
+      "target": "CWE-415",
       "value": 1
     },
     {
       "source": "CWE-17",
-      "target": "unknown",
+      "target": "CWE-640",
+      "value": 1
+    },
+    {
+      "source": "CWE-17",
+      "target": "CWE-691",
+      "value": 1
+    },
+    {
+      "source": "CWE-17",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-17",
+      "target": "CWE-787",
+      "value": 1
+    },
+    {
+      "source": "CWE-184",
+      "target": "CWE-665",
       "value": 1
     },
     {
@@ -681,17 +1460,32 @@
     },
     {
       "source": "CWE-189",
+      "target": "CWE-125",
+      "value": 2
+    },
+    {
+      "source": "CWE-189",
       "target": "CWE-126",
       "value": 1
     },
     {
       "source": "CWE-189",
-      "target": "CWE-19",
+      "target": "CWE-131",
       "value": 1
     },
     {
       "source": "CWE-189",
       "target": "CWE-190",
+      "value": 5
+    },
+    {
+      "source": "CWE-189",
+      "target": "CWE-191",
+      "value": 1
+    },
+    {
+      "source": "CWE-189",
+      "target": "CWE-193",
       "value": 1
     },
     {
@@ -701,8 +1495,8 @@
     },
     {
       "source": "CWE-189",
-      "target": "CWE-252",
-      "value": 1
+      "target": "CWE-20",
+      "value": 2
     },
     {
       "source": "CWE-189",
@@ -711,12 +1505,12 @@
     },
     {
       "source": "CWE-189",
-      "target": "CWE-369",
+      "target": "CWE-363",
       "value": 1
     },
     {
       "source": "CWE-189",
-      "target": "CWE-400",
+      "target": "CWE-369",
       "value": 1
     },
     {
@@ -726,22 +1520,52 @@
     },
     {
       "source": "CWE-189",
-      "target": "CWE-476",
+      "target": "CWE-416",
+      "value": 2
+    },
+    {
+      "source": "CWE-189",
+      "target": "CWE-494",
       "value": 1
     },
     {
       "source": "CWE-189",
-      "target": "CWE-704",
+      "target": "CWE-563",
       "value": 1
     },
     {
       "source": "CWE-189",
-      "target": "CWE-787",
+      "target": "CWE-616",
       "value": 1
     },
     {
       "source": "CWE-189",
-      "target": "CWE-823",
+      "target": "CWE-674",
+      "value": 1
+    },
+    {
+      "source": "CWE-189",
+      "target": "CWE-681",
+      "value": 1
+    },
+    {
+      "source": "CWE-189",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-189",
+      "target": "CWE-770",
+      "value": 1
+    },
+    {
+      "source": "CWE-189",
+      "target": "CWE-843",
+      "value": 1
+    },
+    {
+      "source": "CWE-19",
+      "target": "CWE-121",
       "value": 1
     },
     {
@@ -752,6 +1576,36 @@
     {
       "source": "CWE-19",
       "target": "CWE-416",
+      "value": 1
+    },
+    {
+      "source": "CWE-19",
+      "target": "CWE-787",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-117",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-118",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-119",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-120",
+      "value": 2
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-121",
       "value": 1
     },
     {
@@ -761,17 +1615,32 @@
     },
     {
       "source": "CWE-190",
-      "target": "CWE-190",
-      "value": 4
+      "target": "CWE-125",
+      "value": 2
     },
     {
       "source": "CWE-190",
-      "target": "CWE-325",
+      "target": "CWE-131",
       "value": 1
     },
     {
       "source": "CWE-190",
-      "target": "CWE-358",
+      "target": "CWE-191",
+      "value": 3
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-193",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-197",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-338",
       "value": 1
     },
     {
@@ -781,7 +1650,42 @@
     },
     {
       "source": "CWE-190",
+      "target": "CWE-367",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-401",
+      "value": 2
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-404",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-415",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
       "target": "CWE-416",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-476",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-480",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-617",
       "value": 1
     },
     {
@@ -796,7 +1700,22 @@
     },
     {
       "source": "CWE-190",
+      "target": "CWE-674",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
       "target": "CWE-681",
+      "value": 5
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-682",
+      "value": 4
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-685",
       "value": 1
     },
     {
@@ -806,33 +1725,78 @@
     },
     {
       "source": "CWE-190",
+      "target": "CWE-693",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
       "target": "CWE-704",
       "value": 1
     },
     {
       "source": "CWE-190",
-      "target": "CWE-74",
+      "target": "CWE-754",
+      "value": 2
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-758",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-775",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-787",
+      "value": 1
+    },
+    {
+      "source": "CWE-190",
+      "target": "CWE-840",
+      "value": 1
+    },
+    {
+      "source": "CWE-191",
+      "target": "CWE-125",
+      "value": 1
+    },
+    {
+      "source": "CWE-193",
+      "target": "CWE-119",
+      "value": 1
+    },
+    {
+      "source": "CWE-193",
+      "target": "CWE-125",
+      "value": 1
+    },
+    {
+      "source": "CWE-193",
+      "target": "CWE-665",
       "value": 1
     },
     {
       "source": "CWE-20",
       "target": "CWE-116",
-      "value": 1
-    },
-    {
-      "source": "CWE-20",
-      "target": "CWE-119",
-      "value": 4
-    },
-    {
-      "source": "CWE-20",
-      "target": "CWE-120",
       "value": 2
     },
     {
       "source": "CWE-20",
+      "target": "CWE-120",
+      "value": 3
+    },
+    {
+      "source": "CWE-20",
       "target": "CWE-125",
-      "value": 1
+      "value": 8
     },
     {
       "source": "CWE-20",
@@ -841,28 +1805,28 @@
     },
     {
       "source": "CWE-20",
-      "target": "CWE-16",
-      "value": 1
-    },
-    {
-      "source": "CWE-20",
-      "target": "CWE-170",
-      "value": 1
-    },
-    {
-      "source": "CWE-20",
       "target": "CWE-190",
+      "value": 3
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-195",
       "value": 1
     },
     {
       "source": "CWE-20",
-      "target": "CWE-265",
+      "target": "CWE-280",
       "value": 1
     },
     {
       "source": "CWE-20",
-      "target": "CWE-284",
+      "target": "CWE-288",
       "value": 1
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-295",
+      "value": 2
     },
     {
       "source": "CWE-20",
@@ -871,12 +1835,17 @@
     },
     {
       "source": "CWE-20",
-      "target": "CWE-362",
-      "value": 3
+      "target": "CWE-347",
+      "value": 1
     },
     {
       "source": "CWE-20",
-      "target": "CWE-400",
+      "target": "CWE-362",
+      "value": 8
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-384",
       "value": 1
     },
     {
@@ -886,8 +1855,13 @@
     },
     {
       "source": "CWE-20",
+      "target": "CWE-415",
+      "value": 1
+    },
+    {
+      "source": "CWE-20",
       "target": "CWE-416",
-      "value": 2
+      "value": 3
     },
     {
       "source": "CWE-20",
@@ -901,23 +1875,33 @@
     },
     {
       "source": "CWE-20",
-      "target": "CWE-565",
-      "value": 1
-    },
-    {
-      "source": "CWE-20",
       "target": "CWE-617",
       "value": 1
     },
     {
       "source": "CWE-20",
-      "target": "CWE-670",
+      "target": "CWE-628",
+      "value": 1
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-640",
+      "value": 1
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-668",
+      "value": 1
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-672",
       "value": 3
     },
     {
       "source": "CWE-20",
-      "target": "CWE-671",
-      "value": 1
+      "target": "CWE-674",
+      "value": 2
     },
     {
       "source": "CWE-20",
@@ -927,7 +1911,7 @@
     {
       "source": "CWE-20",
       "target": "CWE-693",
-      "value": 1
+      "value": 3
     },
     {
       "source": "CWE-20",
@@ -936,12 +1920,22 @@
     },
     {
       "source": "CWE-20",
-      "target": "CWE-73",
+      "target": "CWE-703",
+      "value": 5
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-704",
+      "value": 2
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-74",
       "value": 1
     },
     {
       "source": "CWE-20",
-      "target": "CWE-732",
+      "target": "CWE-749",
       "value": 1
     },
     {
@@ -951,28 +1945,68 @@
     },
     {
       "source": "CWE-20",
-      "target": "CWE-778",
-      "value": 1
-    },
-    {
-      "source": "CWE-20",
-      "target": "CWE-78",
-      "value": 1
-    },
-    {
-      "source": "CWE-20",
       "target": "CWE-787",
+      "value": 3
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-824",
       "value": 1
     },
     {
-      "source": "CWE-200",
-      "target": "CWE-119",
+      "source": "CWE-20",
+      "target": "CWE-834",
+      "value": 1
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-835",
+      "value": 2
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-843",
+      "value": 1
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-862",
+      "value": 3
+    },
+    {
+      "source": "CWE-20",
+      "target": "CWE-863",
       "value": 2
     },
     {
       "source": "CWE-200",
-      "target": "CWE-200",
-      "value": 4
+      "target": "CWE-119",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-123",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-125",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-126",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-20",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-201",
+      "value": 1
     },
     {
       "source": "CWE-200",
@@ -982,17 +2016,57 @@
     {
       "source": "CWE-200",
       "target": "CWE-209",
+      "value": 2
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-272",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-284",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-288",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-299",
       "value": 1
     },
     {
       "source": "CWE-200",
       "target": "CWE-362",
+      "value": 8
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-385",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-401",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-404",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-416",
       "value": 1
     },
     {
       "source": "CWE-200",
       "target": "CWE-457",
-      "value": 1
+      "value": 2
     },
     {
       "source": "CWE-200",
@@ -1001,13 +2075,23 @@
     },
     {
       "source": "CWE-200",
-      "target": "CWE-665",
+      "target": "CWE-693",
       "value": 1
     },
     {
       "source": "CWE-200",
-      "target": "CWE-682",
+      "target": "CWE-705",
       "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-710",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
+      "target": "CWE-732",
+      "value": 2
     },
     {
       "source": "CWE-200",
@@ -1016,17 +2100,87 @@
     },
     {
       "source": "CWE-200",
+      "target": "CWE-79",
+      "value": 1
+    },
+    {
+      "source": "CWE-200",
       "target": "CWE-835",
       "value": 1
     },
     {
+      "source": "CWE-200",
+      "target": "CWE-908",
+      "value": 1
+    },
+    {
+      "source": "CWE-203",
+      "target": "CWE-290",
+      "value": 1
+    },
+    {
+      "source": "CWE-203",
+      "target": "CWE-327",
+      "value": 1
+    },
+    {
+      "source": "CWE-209",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
       "source": "CWE-22",
-      "target": "CWE-476",
+      "target": "CWE-170",
+      "value": 1
+    },
+    {
+      "source": "CWE-22",
+      "target": "CWE-20",
+      "value": 1
+    },
+    {
+      "source": "CWE-22",
+      "target": "CWE-327",
+      "value": 1
+    },
+    {
+      "source": "CWE-22",
+      "target": "CWE-59",
+      "value": 1
+    },
+    {
+      "source": "CWE-22",
+      "target": "CWE-732",
+      "value": 2
+    },
+    {
+      "source": "CWE-252",
+      "target": "CWE-253",
+      "value": 1
+    },
+    {
+      "source": "CWE-252",
+      "target": "CWE-787",
+      "value": 1
+    },
+    {
+      "source": "CWE-254",
+      "target": "CWE-119",
       "value": 1
     },
     {
       "source": "CWE-254",
       "target": "CWE-22",
+      "value": 1
+    },
+    {
+      "source": "CWE-254",
+      "target": "CWE-272",
+      "value": 1
+    },
+    {
+      "source": "CWE-254",
+      "target": "CWE-331",
       "value": 1
     },
     {
@@ -1037,22 +2191,22 @@
     {
       "source": "CWE-264",
       "target": "CWE-119",
+      "value": 2
+    },
+    {
+      "source": "CWE-264",
+      "target": "CWE-122",
       "value": 1
     },
     {
       "source": "CWE-264",
-      "target": "CWE-1234",
-      "value": 1
-    },
-    {
-      "source": "CWE-264",
-      "target": "CWE-1241",
+      "target": "CWE-1325",
       "value": 1
     },
     {
       "source": "CWE-264",
       "target": "CWE-20",
-      "value": 1
+      "value": 2
     },
     {
       "source": "CWE-264",
@@ -1062,11 +2216,6 @@
     {
       "source": "CWE-264",
       "target": "CWE-269",
-      "value": 1
-    },
-    {
-      "source": "CWE-264",
-      "target": "CWE-272",
       "value": 2
     },
     {
@@ -1076,7 +2225,22 @@
     },
     {
       "source": "CWE-264",
-      "target": "CWE-290",
+      "target": "CWE-285",
+      "value": 1
+    },
+    {
+      "source": "CWE-264",
+      "target": "CWE-287",
+      "value": 1
+    },
+    {
+      "source": "CWE-264",
+      "target": "CWE-305",
+      "value": 1
+    },
+    {
+      "source": "CWE-264",
+      "target": "CWE-354",
       "value": 1
     },
     {
@@ -1087,7 +2251,12 @@
     {
       "source": "CWE-264",
       "target": "CWE-362",
-      "value": 2
+      "value": 3
+    },
+    {
+      "source": "CWE-264",
+      "target": "CWE-415",
+      "value": 1
     },
     {
       "source": "CWE-264",
@@ -1096,18 +2265,23 @@
     },
     {
       "source": "CWE-264",
-      "target": "CWE-640",
+      "target": "CWE-656",
       "value": 1
     },
     {
       "source": "CWE-264",
-      "target": "CWE-665",
+      "target": "CWE-672",
+      "value": 1
+    },
+    {
+      "source": "CWE-264",
+      "target": "CWE-697",
+      "value": 1
+    },
+    {
+      "source": "CWE-264",
+      "target": "CWE-703",
       "value": 2
-    },
-    {
-      "source": "CWE-264",
-      "target": "CWE-669",
-      "value": 1
     },
     {
       "source": "CWE-264",
@@ -1116,8 +2290,13 @@
     },
     {
       "source": "CWE-264",
-      "target": "CWE-770",
-      "value": 1
+      "target": "CWE-843",
+      "value": 2
+    },
+    {
+      "source": "CWE-264",
+      "target": "CWE-862",
+      "value": 2
     },
     {
       "source": "CWE-264",
@@ -1126,7 +2305,32 @@
     },
     {
       "source": "CWE-269",
-      "target": "CWE-269",
+      "target": "CWE-122",
+      "value": 1
+    },
+    {
+      "source": "CWE-269",
+      "target": "CWE-276",
+      "value": 1
+    },
+    {
+      "source": "CWE-269",
+      "target": "CWE-862",
+      "value": 1
+    },
+    {
+      "source": "CWE-276",
+      "target": "CWE-367",
+      "value": 1
+    },
+    {
+      "source": "CWE-276",
+      "target": "CWE-732",
+      "value": 2
+    },
+    {
+      "source": "CWE-284",
+      "target": "CWE-190",
       "value": 1
     },
     {
@@ -1136,47 +2340,167 @@
     },
     {
       "source": "CWE-284",
+      "target": "CWE-305",
+      "value": 1
+    },
+    {
+      "source": "CWE-284",
+      "target": "CWE-327",
+      "value": 1
+    },
+    {
+      "source": "CWE-284",
       "target": "CWE-362",
       "value": 1
     },
     {
       "source": "CWE-284",
-      "target": "CWE-416",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-284",
+      "target": "CWE-835",
       "value": 1
     },
     {
       "source": "CWE-287",
-      "target": "CWE-824",
+      "target": "CWE-188",
       "value": 1
     },
     {
       "source": "CWE-287",
-      "target": "CWE-825",
-      "value": 1
-    },
-    {
-      "source": "CWE-310",
-      "target": "CWE-321",
-      "value": 1
-    },
-    {
-      "source": "CWE-310",
       "target": "CWE-362",
       "value": 1
     },
     {
-      "source": "CWE-358",
+      "source": "CWE-287",
+      "target": "CWE-415",
+      "value": 1
+    },
+    {
+      "source": "CWE-287",
+      "target": "CWE-472",
+      "value": 1
+    },
+    {
+      "source": "CWE-287",
+      "target": "CWE-476",
+      "value": 1
+    },
+    {
+      "source": "CWE-287",
+      "target": "CWE-665",
+      "value": 1
+    },
+    {
+      "source": "CWE-287",
+      "target": "CWE-667",
+      "value": 1
+    },
+    {
+      "source": "CWE-287",
+      "target": "CWE-670",
+      "value": 2
+    },
+    {
+      "source": "CWE-287",
+      "target": "CWE-693",
+      "value": 3
+    },
+    {
+      "source": "CWE-287",
+      "target": "CWE-754",
+      "value": 2
+    },
+    {
+      "source": "CWE-295",
+      "target": "CWE-287",
+      "value": 1
+    },
+    {
+      "source": "CWE-295",
+      "target": "CWE-354",
+      "value": 1
+    },
+    {
+      "source": "CWE-295",
+      "target": "CWE-457",
+      "value": 1
+    },
+    {
+      "source": "CWE-310",
+      "target": "CWE-208",
+      "value": 1
+    },
+    {
+      "source": "CWE-310",
+      "target": "CWE-302",
+      "value": 1
+    },
+    {
+      "source": "CWE-310",
+      "target": "CWE-385",
+      "value": 1
+    },
+    {
+      "source": "CWE-310",
+      "target": "CWE-416",
+      "value": 1
+    },
+    {
+      "source": "CWE-310",
+      "target": "CWE-674",
+      "value": 1
+    },
+    {
+      "source": "CWE-337",
+      "target": "CWE-331",
+      "value": 1
+    },
+    {
+      "source": "CWE-338",
+      "target": "CWE-775",
+      "value": 1
+    },
+    {
+      "source": "CWE-346",
+      "target": "CWE-670",
+      "value": 1
+    },
+    {
+      "source": "CWE-347",
       "target": "CWE-401",
       "value": 1
     },
     {
-      "source": "CWE-362",
-      "target": "CWE-1281",
+      "source": "CWE-347",
+      "target": "CWE-841",
+      "value": 1
+    },
+    {
+      "source": "CWE-352",
+      "target": "CWE-287",
+      "value": 1
+    },
+    {
+      "source": "CWE-354",
+      "target": "CWE-124",
+      "value": 1
+    },
+    {
+      "source": "CWE-358",
+      "target": "CWE-404",
       "value": 1
     },
     {
       "source": "CWE-362",
-      "target": "CWE-190",
+      "target": "CWE-119",
+      "value": 1
+    },
+    {
+      "source": "CWE-362",
+      "target": "CWE-20",
       "value": 1
     },
     {
@@ -1186,32 +2510,52 @@
     },
     {
       "source": "CWE-362",
-      "target": "CWE-276",
-      "value": 1
+      "target": "CWE-269",
+      "value": 2
     },
     {
       "source": "CWE-362",
-      "target": "CWE-362",
-      "value": 3
+      "target": "CWE-366",
+      "value": 1
     },
     {
       "source": "CWE-362",
       "target": "CWE-367",
-      "value": 1
+      "value": 2
     },
     {
       "source": "CWE-362",
-      "target": "CWE-415",
+      "target": "CWE-400",
       "value": 1
     },
     {
       "source": "CWE-362",
       "target": "CWE-416",
-      "value": 3
+      "value": 4
     },
     {
       "source": "CWE-362",
-      "target": "CWE-476",
+      "target": "CWE-662",
+      "value": 1
+    },
+    {
+      "source": "CWE-362",
+      "target": "CWE-664",
+      "value": 2
+    },
+    {
+      "source": "CWE-362",
+      "target": "CWE-665",
+      "value": 2
+    },
+    {
+      "source": "CWE-362",
+      "target": "CWE-672",
+      "value": 2
+    },
+    {
+      "source": "CWE-362",
+      "target": "CWE-693",
       "value": 1
     },
     {
@@ -1221,83 +2565,123 @@
     },
     {
       "source": "CWE-362",
-      "target": "CWE-704",
+      "target": "CWE-710",
       "value": 1
     },
     {
       "source": "CWE-362",
-      "target": "CWE-773",
+      "target": "CWE-732",
+      "value": 1
+    },
+    {
+      "source": "CWE-362",
+      "target": "CWE-783",
+      "value": 1
+    },
+    {
+      "source": "CWE-362",
+      "target": "CWE-787",
       "value": 1
     },
     {
       "source": "CWE-362",
       "target": "CWE-833",
-      "value": 2
+      "value": 3
+    },
+    {
+      "source": "CWE-369",
+      "target": "CWE-125",
+      "value": 1
     },
     {
       "source": "CWE-369",
       "target": "CWE-190",
+      "value": 5
+    },
+    {
+      "source": "CWE-369",
+      "target": "CWE-401",
       "value": 1
     },
     {
       "source": "CWE-369",
-      "target": "CWE-400",
+      "target": "CWE-697",
       "value": 1
     },
     {
       "source": "CWE-388",
-      "target": "CWE-670",
+      "target": "CWE-682",
       "value": 1
     },
     {
       "source": "CWE-399",
       "target": "CWE-119",
-      "value": 2
-    },
-    {
-      "source": "CWE-399",
-      "target": "CWE-200",
-      "value": 2
-    },
-    {
-      "source": "CWE-399",
-      "target": "CWE-252",
       "value": 1
     },
     {
       "source": "CWE-399",
-      "target": "CWE-359",
+      "target": "CWE-120",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-121",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-190",
+      "value": 3
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-209",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-285",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-321",
       "value": 1
     },
     {
       "source": "CWE-399",
       "target": "CWE-362",
-      "value": 2
+      "value": 5
     },
     {
       "source": "CWE-399",
-      "target": "CWE-400",
+      "target": "CWE-390",
       "value": 1
     },
     {
       "source": "CWE-399",
       "target": "CWE-401",
-      "value": 4
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-404",
+      "value": 2
     },
     {
       "source": "CWE-399",
       "target": "CWE-415",
-      "value": 2
-    },
-    {
-      "source": "CWE-399",
-      "target": "CWE-416",
       "value": 3
     },
     {
       "source": "CWE-399",
+      "target": "CWE-416",
+      "value": 4
+    },
+    {
+      "source": "CWE-399",
       "target": "CWE-476",
-      "value": 2
+      "value": 4
     },
     {
       "source": "CWE-399",
@@ -1306,48 +2690,253 @@
     },
     {
       "source": "CWE-399",
-      "target": "CWE-670",
+      "target": "CWE-590",
       "value": 1
     },
     {
       "source": "CWE-399",
+      "target": "CWE-664",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-667",
+      "value": 2
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-668",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-693",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-703",
+      "value": 2
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-770",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-775",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-787",
+      "value": 2
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-824",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-835",
+      "value": 1
+    },
+    {
+      "source": "CWE-399",
+      "target": "CWE-922",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-119",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-1284",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-190",
+      "value": 2
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-362",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-404",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-416",
+      "value": 5
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-459",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-476",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-664",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-665",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-703",
+      "value": 2
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-707",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-754",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-775",
+      "value": 1
+    },
+    {
+      "source": "CWE-400",
+      "target": "CWE-843",
+      "value": 1
+    },
+    {
+      "source": "CWE-401",
+      "target": "CWE-121",
+      "value": 1
+    },
+    {
+      "source": "CWE-401",
+      "target": "CWE-190",
+      "value": 1
+    },
+    {
+      "source": "CWE-401",
+      "target": "CWE-388",
+      "value": 1
+    },
+    {
+      "source": "CWE-401",
+      "target": "CWE-415",
+      "value": 1
+    },
+    {
+      "source": "CWE-401",
+      "target": "CWE-416",
+      "value": 1
+    },
+    {
+      "source": "CWE-401",
+      "target": "CWE-476",
+      "value": 1
+    },
+    {
+      "source": "CWE-401",
+      "target": "CWE-617",
+      "value": 1
+    },
+    {
+      "source": "CWE-401",
       "target": "CWE-672",
-      "value": 1
+      "value": 2
     },
     {
-      "source": "CWE-399",
-      "target": "unknown",
-      "value": 1
-    },
-    {
-      "source": "CWE-400",
-      "target": "CWE-399",
-      "value": 1
-    },
-    {
-      "source": "CWE-400",
+      "source": "CWE-401",
       "target": "CWE-787",
       "value": 1
     },
     {
-      "source": "CWE-415",
-      "target": "CWE-193",
+      "source": "CWE-404",
+      "target": "CWE-248",
+      "value": 1
+    },
+    {
+      "source": "CWE-404",
+      "target": "CWE-362",
       "value": 1
     },
     {
       "source": "CWE-415",
-      "target": "CWE-284",
+      "target": "CWE-119",
+      "value": 1
+    },
+    {
+      "source": "CWE-415",
+      "target": "CWE-120",
+      "value": 1
+    },
+    {
+      "source": "CWE-415",
+      "target": "CWE-20",
+      "value": 1
+    },
+    {
+      "source": "CWE-415",
+      "target": "CWE-264",
       "value": 1
     },
     {
       "source": "CWE-415",
       "target": "CWE-362",
+      "value": 2
+    },
+    {
+      "source": "CWE-415",
+      "target": "CWE-388",
+      "value": 1
+    },
+    {
+      "source": "CWE-415",
+      "target": "CWE-416",
+      "value": 3
+    },
+    {
+      "source": "CWE-415",
+      "target": "CWE-763",
+      "value": 1
+    },
+    {
+      "source": "CWE-415",
+      "target": "CWE-775",
+      "value": 1
+    },
+    {
+      "source": "CWE-415",
+      "target": "CWE-787",
+      "value": 1
+    },
+    {
+      "source": "CWE-415",
+      "target": "CWE-835",
       "value": 1
     },
     {
       "source": "CWE-416",
-      "target": "CWE-120",
-      "value": 1
+      "target": "CWE-119",
+      "value": 3
     },
     {
       "source": "CWE-416",
@@ -1357,37 +2946,27 @@
     {
       "source": "CWE-416",
       "target": "CWE-190",
+      "value": 6
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-193",
       "value": 1
     },
     {
       "source": "CWE-416",
-      "target": "CWE-191",
-      "value": 1
+      "target": "CWE-20",
+      "value": 2
     },
     {
       "source": "CWE-416",
-      "target": "CWE-202",
-      "value": 1
-    },
-    {
-      "source": "CWE-416",
-      "target": "CWE-290",
-      "value": 1
-    },
-    {
-      "source": "CWE-416",
-      "target": "CWE-346",
-      "value": 1
-    },
-    {
-      "source": "CWE-416",
-      "target": "CWE-361",
+      "target": "CWE-200",
       "value": 1
     },
     {
       "source": "CWE-416",
       "target": "CWE-362",
-      "value": 3
+      "value": 11
     },
     {
       "source": "CWE-416",
@@ -1396,22 +2975,42 @@
     },
     {
       "source": "CWE-416",
+      "target": "CWE-399",
+      "value": 1
+    },
+    {
+      "source": "CWE-416",
       "target": "CWE-401",
+      "value": 4
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-404",
       "value": 1
     },
     {
       "source": "CWE-416",
       "target": "CWE-415",
-      "value": 2
+      "value": 3
     },
     {
       "source": "CWE-416",
-      "target": "CWE-416",
-      "value": 5
+      "target": "CWE-476",
+      "value": 1
     },
     {
       "source": "CWE-416",
-      "target": "CWE-610",
+      "target": "CWE-502",
+      "value": 1
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-640",
+      "value": 1
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-665",
       "value": 1
     },
     {
@@ -1421,37 +3020,142 @@
     },
     {
       "source": "CWE-416",
-      "target": "CWE-798",
+      "target": "CWE-668",
+      "value": 1
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-672",
+      "value": 3
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-690",
+      "value": 1
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-691",
+      "value": 1
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-693",
+      "value": 2
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-754",
+      "value": 1
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-783",
+      "value": 1
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-787",
+      "value": 2
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-824",
+      "value": 1
+    },
+    {
+      "source": "CWE-416",
+      "target": "CWE-825",
       "value": 1
     },
     {
       "source": "CWE-416",
       "target": "CWE-833",
-      "value": 2
-    },
-    {
-      "source": "CWE-416",
-      "target": "CWE-910",
       "value": 1
     },
     {
+      "source": "CWE-416",
+      "target": "CWE-843",
+      "value": 3
+    },
+    {
       "source": "CWE-426",
-      "target": "CWE-346",
+      "target": "CWE-732",
+      "value": 1
+    },
+    {
+      "source": "CWE-436",
+      "target": "CWE-693",
+      "value": 1
+    },
+    {
+      "source": "CWE-459",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-116",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-119",
+      "value": 4
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-120",
       "value": 1
     },
     {
       "source": "CWE-476",
       "target": "CWE-121",
+      "value": 2
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-125",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-129",
       "value": 1
     },
     {
       "source": "CWE-476",
       "target": "CWE-190",
+      "value": 4
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-193",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-20",
       "value": 2
     },
     {
       "source": "CWE-476",
-      "target": "CWE-325",
+      "target": "CWE-226",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-303",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-305",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-307",
       "value": 1
     },
     {
@@ -1462,31 +3166,41 @@
     {
       "source": "CWE-476",
       "target": "CWE-362",
-      "value": 2
+      "value": 7
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-388",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-398",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-399",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-400",
+      "value": 1
     },
     {
       "source": "CWE-476",
       "target": "CWE-401",
-      "value": 2
+      "value": 7
     },
     {
       "source": "CWE-476",
       "target": "CWE-416",
-      "value": 1
+      "value": 5
     },
     {
       "source": "CWE-476",
       "target": "CWE-457",
-      "value": 1
-    },
-    {
-      "source": "CWE-476",
-      "target": "CWE-476",
-      "value": 3
-    },
-    {
-      "source": "CWE-476",
-      "target": "CWE-521",
       "value": 1
     },
     {
@@ -1496,12 +3210,62 @@
     },
     {
       "source": "CWE-476",
-      "target": "CWE-704",
+      "target": "CWE-664",
       "value": 1
     },
     {
       "source": "CWE-476",
-      "target": "CWE-755",
+      "target": "CWE-665",
+      "value": 3
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-667",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-670",
+      "value": 3
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-672",
+      "value": 2
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-690",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-693",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-704",
+      "value": 2
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-754",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-778",
+      "value": 1
+    },
+    {
+      "source": "CWE-476",
+      "target": "CWE-787",
       "value": 1
     },
     {
@@ -1510,18 +3274,123 @@
       "value": 1
     },
     {
+      "source": "CWE-476",
+      "target": "CWE-843",
+      "value": 2
+    },
+    {
+      "source": "CWE-502",
+      "target": "CWE-915",
+      "value": 1
+    },
+    {
+      "source": "CWE-522",
+      "target": "CWE-22",
+      "value": 1
+    },
+    {
       "source": "CWE-532",
-      "target": "CWE-294",
+      "target": "CWE-436",
       "value": 1
     },
     {
       "source": "CWE-59",
-      "target": "CWE-59",
+      "target": "CWE-22",
+      "value": 1
+    },
+    {
+      "source": "CWE-59",
+      "target": "CWE-362",
+      "value": 2
+    },
+    {
+      "source": "CWE-59",
+      "target": "CWE-367",
+      "value": 1
+    },
+    {
+      "source": "CWE-59",
+      "target": "CWE-425",
+      "value": 1
+    },
+    {
+      "source": "CWE-59",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-59",
+      "target": "CWE-732",
+      "value": 1
+    },
+    {
+      "source": "CWE-59",
+      "target": "CWE-775",
+      "value": 1
+    },
+    {
+      "source": "CWE-59",
+      "target": "CWE-787",
+      "value": 1
+    },
+    {
+      "source": "CWE-601",
+      "target": "CWE-201",
+      "value": 1
+    },
+    {
+      "source": "CWE-601",
+      "target": "CWE-602",
+      "value": 1
+    },
+    {
+      "source": "CWE-611",
+      "target": "CWE-284",
+      "value": 1
+    },
+    {
+      "source": "CWE-617",
+      "target": "CWE-120",
+      "value": 1
+    },
+    {
+      "source": "CWE-617",
+      "target": "CWE-125",
+      "value": 1
+    },
+    {
+      "source": "CWE-617",
+      "target": "CWE-190",
       "value": 2
     },
     {
       "source": "CWE-617",
+      "target": "CWE-203",
+      "value": 1
+    },
+    {
+      "source": "CWE-617",
       "target": "CWE-401",
+      "value": 3
+    },
+    {
+      "source": "CWE-617",
+      "target": "CWE-670",
+      "value": 1
+    },
+    {
+      "source": "CWE-617",
+      "target": "CWE-672",
+      "value": 1
+    },
+    {
+      "source": "CWE-617",
+      "target": "CWE-685",
+      "value": 1
+    },
+    {
+      "source": "CWE-617",
+      "target": "CWE-693",
       "value": 1
     },
     {
@@ -1530,8 +3399,253 @@
       "value": 1
     },
     {
-      "source": "CWE-74",
+      "source": "CWE-617",
+      "target": "CWE-787",
+      "value": 2
+    },
+    {
+      "source": "CWE-617",
+      "target": "CWE-835",
+      "value": 1
+    },
+    {
+      "source": "CWE-665",
+      "target": "CWE-367",
+      "value": 1
+    },
+    {
+      "source": "CWE-665",
+      "target": "CWE-704",
+      "value": 1
+    },
+    {
+      "source": "CWE-665",
+      "target": "CWE-710",
+      "value": 1
+    },
+    {
+      "source": "CWE-667",
+      "target": "CWE-120",
+      "value": 1
+    },
+    {
+      "source": "CWE-668",
+      "target": "CWE-20",
+      "value": 1
+    },
+    {
+      "source": "CWE-668",
+      "target": "CWE-272",
+      "value": 1
+    },
+    {
+      "source": "CWE-670",
+      "target": "CWE-764",
+      "value": 1
+    },
+    {
+      "source": "CWE-672",
+      "target": "CWE-401",
+      "value": 2
+    },
+    {
+      "source": "CWE-674",
+      "target": "CWE-275",
+      "value": 1
+    },
+    {
+      "source": "CWE-674",
+      "target": "CWE-400",
+      "value": 1
+    },
+    {
+      "source": "CWE-674",
+      "target": "CWE-829",
+      "value": 1
+    },
+    {
+      "source": "CWE-682",
+      "target": "CWE-476",
+      "value": 1
+    },
+    {
+      "source": "CWE-697",
+      "target": "CWE-369",
+      "value": 1
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-119",
+      "value": 2
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-125",
+      "value": 1
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-126",
+      "value": 1
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-190",
+      "value": 2
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-197",
+      "value": 1
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-20",
+      "value": 1
+    },
+    {
+      "source": "CWE-703",
       "target": "CWE-330",
+      "value": 1
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-362",
+      "value": 2
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-404",
+      "value": 1
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-416",
+      "value": 2
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-476",
+      "value": 3
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-561",
+      "value": 1
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-672",
+      "value": 1
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-772",
+      "value": 2
+    },
+    {
+      "source": "CWE-703",
+      "target": "CWE-787",
+      "value": 1
+    },
+    {
+      "source": "CWE-704",
+      "target": "CWE-119",
+      "value": 1
+    },
+    {
+      "source": "CWE-73",
+      "target": "CWE-670",
+      "value": 1
+    },
+    {
+      "source": "CWE-732",
+      "target": "CWE-367",
+      "value": 1
+    },
+    {
+      "source": "CWE-74",
+      "target": "CWE-338",
+      "value": 1
+    },
+    {
+      "source": "CWE-74",
+      "target": "CWE-416",
+      "value": 1
+    },
+    {
+      "source": "CWE-74",
+      "target": "CWE-78",
+      "value": 1
+    },
+    {
+      "source": "CWE-754",
+      "target": "CWE-200",
+      "value": 1
+    },
+    {
+      "source": "CWE-755",
+      "target": "CWE-823",
+      "value": 1
+    },
+    {
+      "source": "CWE-755",
+      "target": "CWE-862",
+      "value": 1
+    },
+    {
+      "source": "CWE-763",
+      "target": "CWE-416",
+      "value": 1
+    },
+    {
+      "source": "CWE-763",
+      "target": "CWE-666",
+      "value": 1
+    },
+    {
+      "source": "CWE-77",
+      "target": "CWE-116",
+      "value": 1
+    },
+    {
+      "source": "CWE-77",
+      "target": "CWE-20",
+      "value": 2
+    },
+    {
+      "source": "CWE-77",
+      "target": "CWE-22",
+      "value": 1
+    },
+    {
+      "source": "CWE-77",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-770",
+      "target": "CWE-190",
+      "value": 2
+    },
+    {
+      "source": "CWE-770",
+      "target": "CWE-404",
+      "value": 1
+    },
+    {
+      "source": "CWE-770",
+      "target": "CWE-617",
+      "value": 1
+    },
+    {
+      "source": "CWE-770",
+      "target": "CWE-693",
+      "value": 1
+    },
+    {
+      "source": "CWE-770",
+      "target": "CWE-772",
       "value": 1
     },
     {
@@ -1541,12 +3655,62 @@
     },
     {
       "source": "CWE-772",
+      "target": "CWE-252",
+      "value": 1
+    },
+    {
+      "source": "CWE-772",
+      "target": "CWE-388",
+      "value": 1
+    },
+    {
+      "source": "CWE-772",
       "target": "CWE-401",
-      "value": 2
+      "value": 18
+    },
+    {
+      "source": "CWE-772",
+      "target": "CWE-404",
+      "value": 1
+    },
+    {
+      "source": "CWE-772",
+      "target": "CWE-415",
+      "value": 1
     },
     {
       "source": "CWE-772",
       "target": "CWE-416",
+      "value": 2
+    },
+    {
+      "source": "CWE-772",
+      "target": "CWE-457",
+      "value": 1
+    },
+    {
+      "source": "CWE-772",
+      "target": "CWE-476",
+      "value": 2
+    },
+    {
+      "source": "CWE-772",
+      "target": "CWE-617",
+      "value": 1
+    },
+    {
+      "source": "CWE-772",
+      "target": "CWE-665",
+      "value": 1
+    },
+    {
+      "source": "CWE-772",
+      "target": "CWE-754",
+      "value": 1
+    },
+    {
+      "source": "CWE-772",
+      "target": "CWE-824",
       "value": 1
     },
     {
@@ -1555,14 +3719,69 @@
       "value": 1
     },
     {
-      "source": "CWE-787",
+      "source": "CWE-78",
       "target": "CWE-120",
       "value": 1
     },
     {
       "source": "CWE-787",
-      "target": "CWE-190",
+      "target": "CWE-119",
+      "value": 7
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-120",
+      "value": 7
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-121",
       "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-125",
+      "value": 5
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-126",
+      "value": 3
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-129",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-131",
+      "value": 4
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-134",
+      "value": 3
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-170",
+      "value": 2
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-190",
+      "value": 11
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-191",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-193",
+      "value": 5
     },
     {
       "source": "CWE-787",
@@ -1571,22 +3790,167 @@
     },
     {
       "source": "CWE-787",
-      "target": "CWE-400",
+      "target": "CWE-200",
       "value": 1
     },
     {
       "source": "CWE-787",
-      "target": "CWE-754",
+      "target": "CWE-252",
+      "value": 2
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-346",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-362",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-400",
+      "value": 3
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-401",
+      "value": 5
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-416",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-476",
+      "value": 4
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-477",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-617",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-662",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-665",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-669",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-682",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-685",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-693",
+      "value": 2
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-697",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-704",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-770",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-788",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-805",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-823",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-828",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-835",
+      "value": 1
+    },
+    {
+      "source": "CWE-787",
+      "target": "CWE-838",
       "value": 1
     },
     {
       "source": "CWE-79",
-      "target": "CWE-288",
+      "target": "CWE-330",
       "value": 1
     },
     {
       "source": "CWE-79",
-      "target": "CWE-755",
+      "target": "CWE-672",
+      "value": 1
+    },
+    {
+      "source": "CWE-79",
+      "target": "CWE-703",
+      "value": 1
+    },
+    {
+      "source": "CWE-79",
+      "target": "CWE-80",
+      "value": 1
+    },
+    {
+      "source": "CWE-805",
+      "target": "CWE-125",
+      "value": 1
+    },
+    {
+      "source": "CWE-834",
+      "target": "CWE-120",
+      "value": 1
+    },
+    {
+      "source": "CWE-834",
+      "target": "CWE-252",
       "value": 1
     },
     {
@@ -1601,8 +3965,38 @@
     },
     {
       "source": "CWE-834",
-      "target": "CWE-704",
+      "target": "CWE-697",
       "value": 1
+    },
+    {
+      "source": "CWE-834",
+      "target": "CWE-824",
+      "value": 1
+    },
+    {
+      "source": "CWE-834",
+      "target": "CWE-835",
+      "value": 1
+    },
+    {
+      "source": "CWE-835",
+      "target": "CWE-119",
+      "value": 1
+    },
+    {
+      "source": "CWE-835",
+      "target": "CWE-121",
+      "value": 1
+    },
+    {
+      "source": "CWE-835",
+      "target": "CWE-126",
+      "value": 2
+    },
+    {
+      "source": "CWE-835",
+      "target": "CWE-190",
+      "value": 2
     },
     {
       "source": "CWE-835",
@@ -1611,22 +4005,47 @@
     },
     {
       "source": "CWE-835",
-      "target": "CWE-400",
+      "target": "CWE-401",
       "value": 1
     },
     {
       "source": "CWE-835",
-      "target": "CWE-457",
+      "target": "CWE-416",
+      "value": 2
+    },
+    {
+      "source": "CWE-835",
+      "target": "CWE-665",
       "value": 1
     },
     {
       "source": "CWE-835",
-      "target": "CWE-674",
+      "target": "CWE-764",
+      "value": 1
+    },
+    {
+      "source": "CWE-835",
+      "target": "CWE-770",
+      "value": 1
+    },
+    {
+      "source": "CWE-835",
+      "target": "CWE-780",
+      "value": 1
+    },
+    {
+      "source": "CWE-843",
+      "target": "CWE-476",
       "value": 1
     },
     {
       "source": "CWE-862",
-      "target": "CWE-269",
+      "target": "CWE-306",
+      "value": 1
+    },
+    {
+      "source": "CWE-862",
+      "target": "CWE-840",
       "value": 1
     },
     {
@@ -1635,28 +4054,73 @@
       "value": 1
     },
     {
+      "source": "CWE-88",
+      "target": "CWE-22",
+      "value": 2
+    },
+    {
       "source": "CWE-89",
       "target": "CWE-287",
       "value": 1
     },
     {
       "source": "CWE-89",
-      "target": "CWE-89",
+      "target": "CWE-642",
+      "value": 1
+    },
+    {
+      "source": "CWE-908",
+      "target": "CWE-119",
+      "value": 2
+    },
+    {
+      "source": "CWE-908",
+      "target": "CWE-129",
+      "value": 1
+    },
+    {
+      "source": "CWE-908",
+      "target": "CWE-362",
+      "value": 1
+    },
+    {
+      "source": "CWE-91",
+      "target": "CWE-116",
+      "value": 1
+    },
+    {
+      "source": "CWE-91",
+      "target": "CWE-159",
+      "value": 1
+    },
+    {
+      "source": "CWE-913",
+      "target": "CWE-476",
       "value": 1
     },
     {
       "source": "CWE-918",
-      "target": "CWE-338",
+      "target": "CWE-922",
       "value": 1
     },
     {
       "source": "CWE-94",
-      "target": "CWE-404",
+      "target": "CWE-502",
       "value": 1
     },
     {
       "source": "CWE-94",
-      "target": "CWE-787",
+      "target": "CWE-835",
+      "value": 1
+    },
+    {
+      "source": "CWE-94",
+      "target": "CWE-843",
+      "value": 1
+    },
+    {
+      "source": "CWE-94",
+      "target": "CWE-943",
       "value": 1
     }
   ]

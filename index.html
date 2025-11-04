@@ -37,8 +37,9 @@
   .link-outgoing {
     stroke: #3498db !important;
   }
-  .link-bidirectional {
-    stroke: purple !important;
+  /* Bidirectional links will have both classes, show gradient */
+  .link-incoming.link-outgoing {
+    stroke: url(#bidirectional-gradient) !important;
   }
 
   .node-selected circle {
@@ -248,10 +249,10 @@
 </style>
 <body>
 
-<!-- UNIFIED CONTROL BAR WITH ALL THREE BUTTONS -->
+<!-- UNIFIED CONTROL BAR WITH FILTER, PATTERN SUMMARY, AND RESET BUTTONS -->
 <div class="control-bar">
   <button onclick="toggleFilterPanel()" id="filter-toggle">⚙️ Filters</button>
-  <button onclick="location.href='index_.html'">2-D View</button>
+  <button onclick="location.href='cwe_pair_pattern_summary_sorted.html'">📊 Pattern Summary</button>
   <button onclick="resetZoom()">Reset</button>
 </div>
 
@@ -310,6 +311,28 @@ const width = window.innerWidth;
 const height = window.innerHeight;
 
 const svg = d3.select("body").append("svg");
+
+// Add gradient definition for bidirectional links
+const defs = svg.append("defs");
+const gradient = defs.append("linearGradient")
+  .attr("id", "bidirectional-gradient")
+  .attr("x1", "0%")
+  .attr("y1", "0%")
+  .attr("x2", "100%")
+  .attr("y2", "0%");
+
+gradient.append("stop")
+  .attr("offset", "0%")
+  .attr("style", "stop-color:#e74c3c;stop-opacity:1");
+
+gradient.append("stop")
+  .attr("offset", "50%")
+  .attr("style", "stop-color:#9b59b6;stop-opacity:1");
+
+gradient.append("stop")
+  .attr("offset", "100%")
+  .attr("style", "stop-color:#3498db;stop-opacity:1");
+
 const container = svg.append("g");
 
 const zoom = d3.zoom()
@@ -408,46 +431,19 @@ d3.json("cwe_network_edges.json").then(data => {
           // Update labels for selected + connected nodes
           updateLabels(connectedNodes);
 
-          // Highlight links with thickness and bidirectional detection
+          // Highlight links with thickness
           container.selectAll("line")
             .classed("link-incoming", l => {
               const src = typeof l.source === 'string' ? l.source : l.source.id;
               const tgt = typeof l.target === 'string' ? l.target : l.target.id;
-              const isIncoming = tgt === d.id;
-              const isOutgoing = src === d.id;
-              // Check if bidirectional relationship exists
-              const hasBidirectional = networkData.links.some(link => {
-                const linkSrc = typeof link.source === 'string' ? link.source : link.source.id;
-                const linkTgt = typeof link.target === 'string' ? link.target : link.target.id;
-                return (linkSrc === tgt && linkTgt === src);
-              });
-              return isIncoming && !hasBidirectional;
+              return tgt === d.id;
             })
             .classed("link-outgoing", l => {
               const src = typeof l.source === 'string' ? l.source : l.source.id;
               const tgt = typeof l.target === 'string' ? l.target : l.target.id;
-              const isIncoming = tgt === d.id;
-              const isOutgoing = src === d.id;
-              // Check if bidirectional relationship exists
-              const hasBidirectional = networkData.links.some(link => {
-                const linkSrc = typeof link.source === 'string' ? link.source : link.source.id;
-                const linkTgt = typeof link.target === 'string' ? link.target : link.target.id;
-                return (linkSrc === tgt && linkTgt === src);
-              });
-              return isOutgoing && !hasBidirectional;
+              return src === d.id;
             })
-            .classed("link-bidirectional", l => {
-              const src = typeof l.source === 'string' ? l.source : l.source.id;
-              const tgt = typeof l.target === 'string' ? l.target : l.target.id;
-              const isConnected = (src === d.id || tgt === d.id);
-              if (!isConnected) return false;
-              // Check if bidirectional relationship exists
-              return networkData.links.some(link => {
-                const linkSrc = typeof link.source === 'string' ? link.source : link.source.id;
-                const linkTgt = typeof link.target === 'string' ? link.target : link.target.id;
-                return (linkSrc === tgt && linkTgt === src);
-              });
-            })
+            .classed("link-bidirectional", false)  // No longer used
             .classed("dimmed-link", l => {
               const src = typeof l.source === 'string' ? l.source : l.source.id;
               const tgt = typeof l.target === 'string' ? l.target : l.target.id;
